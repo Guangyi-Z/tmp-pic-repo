@@ -1,0 +1,1139 @@
+Namespace(batch_size=64, dict='data/CBTest/data/cbtest_NE_train.txtdict.pt', dropout=0.1, embed_size=384, epochs=50, gpu=0, gru_size=384, learning_rate=0.001, log_interval=50, save_model='model_simplegru', start_epoch=1, train_from='models/model_simplegru_epoch10_acc_67.95.pt', traindata='data/CBTest/data/cbtest_NE_train.txt.pt', validdata='data/CBTest/data/cbtest_NE_valid_2000ex.txt.pt', weight_decay=0.0001)
+('Loading dictrionary from ', 'data/CBTest/data/cbtest_NE_train.txtdict.pt')
+('Loading train data from ', 'data/CBTest/data/cbtest_NE_train.txt.pt')
+('Loading valid data from ', 'data/CBTest/data/cbtest_NE_valid_2000ex.txt.pt')
+ * vocabulary size = 15683
+ * number of training samples. 108719
+ * maximum batch size. 64
+Building model...
+Loading model from checkpoint at 
+* number of parameters: 7796352
+AoAReader(
+  (embedding): Embedding(15683, 384, padding_idx=0)
+  (gru): SimpleGRU(384, 384, batch_first=True, dropout=0.1, bidirectional=True)
+)
+
+Epoch 11,     1/ 1699; avg loss: 0.39; acc:  85.94;       3 s elapsed
+Epoch 11,    51/ 1699; avg loss: 0.42; acc:  86.19;     152 s elapsed
+Epoch 11,   101/ 1699; avg loss: 0.42; acc:  84.97;     292 s elapsed
+Epoch 11,   151/ 1699; avg loss: 0.44; acc:  84.69;     436 s elapsed
+Epoch 11,   201/ 1699; avg loss: 0.45; acc:  83.81;     580 s elapsed
+Epoch 11,   251/ 1699; avg loss: 0.46; acc:  84.12;     722 s elapsed
+Epoch 11,   301/ 1699; avg loss: 0.44; acc:  84.38;     865 s elapsed
+Epoch 11,   351/ 1699; avg loss: 0.47; acc:  84.72;    1007 s elapsed
+Epoch 11,   401/ 1699; avg loss: 0.50; acc:  82.88;    1150 s elapsed
+Epoch 11,   451/ 1699; avg loss: 0.48; acc:  82.50;    1296 s elapsed
+Epoch 11,   501/ 1699; avg loss: 0.49; acc:  82.19;    1433 s elapsed
+Epoch 11,   551/ 1699; avg loss: 0.48; acc:  84.06;    1578 s elapsed
+Epoch 11,   601/ 1699; avg loss: 0.50; acc:  83.06;    1720 s elapsed
+Epoch 11,   651/ 1699; avg loss: 0.50; acc:  82.75;    1865 s elapsed
+Epoch 11,   701/ 1699; avg loss: 0.48; acc:  82.53;    2005 s elapsed
+Epoch 11,   751/ 1699; avg loss: 0.50; acc:  81.97;    2148 s elapsed
+Epoch 11,   801/ 1699; avg loss: 0.50; acc:  83.34;    2288 s elapsed
+Epoch 11,   851/ 1699; avg loss: 0.52; acc:  82.47;    2428 s elapsed
+Epoch 11,   901/ 1699; avg loss: 0.54; acc:  82.31;    2566 s elapsed
+Epoch 11,   951/ 1699; avg loss: 0.49; acc:  82.94;    2705 s elapsed
+Epoch 11,  1001/ 1699; avg loss: 0.52; acc:  81.72;    2848 s elapsed
+Epoch 11,  1051/ 1699; avg loss: 0.53; acc:  81.38;    2990 s elapsed
+Epoch 11,  1101/ 1699; avg loss: 0.51; acc:  81.78;    3130 s elapsed
+Epoch 11,  1151/ 1699; avg loss: 0.55; acc:  80.59;    3273 s elapsed
+Epoch 11,  1201/ 1699; avg loss: 0.58; acc:  79.56;    3416 s elapsed
+Epoch 11,  1251/ 1699; avg loss: 0.54; acc:  81.06;    3558 s elapsed
+Epoch 11,  1301/ 1699; avg loss: 0.55; acc:  81.28;    3700 s elapsed
+Epoch 11,  1351/ 1699; avg loss: 0.56; acc:  80.06;    3845 s elapsed
+Epoch 11,  1401/ 1699; avg loss: 0.51; acc:  82.31;    3987 s elapsed
+Epoch 11,  1451/ 1699; avg loss: 0.57; acc:  80.78;    4130 s elapsed
+Epoch 11,  1501/ 1699; avg loss: 0.56; acc:  80.12;    4275 s elapsed
+Epoch 11,  1551/ 1699; avg loss: 0.55; acc:  81.41;    4416 s elapsed
+Epoch 11,  1601/ 1699; avg loss: 0.54; acc:  81.22;    4559 s elapsed
+Epoch 11,  1651/ 1699; avg loss: 0.57; acc:  80.53;    4698 s elapsed
+Epoch 11:	 average loss: 0.51	 train accuracy: 82.3747
+====================
+Evaluating on validation set:
+Validation loss: 1.33
+Validation accuracy: 67.3
+====================
+
+Epoch 12,     1/ 1699; avg loss: 0.41; acc:  89.06;    4849 s elapsed
+Epoch 12,    51/ 1699; avg loss: 0.41; acc:  85.66;    4993 s elapsed
+Epoch 12,   101/ 1699; avg loss: 0.41; acc:  85.69;    5131 s elapsed
+Epoch 12,   151/ 1699; avg loss: 0.42; acc:  85.12;    5271 s elapsed
+Epoch 12,   201/ 1699; avg loss: 0.44; acc:  84.78;    5411 s elapsed
+Epoch 12,   251/ 1699; avg loss: 0.44; acc:  84.41;    5555 s elapsed
+Epoch 12,   301/ 1699; avg loss: 0.43; acc:  85.59;    5697 s elapsed
+Epoch 12,   351/ 1699; avg loss: 0.44; acc:  84.62;    5838 s elapsed
+Epoch 12,   401/ 1699; avg loss: 0.46; acc:  83.59;    5981 s elapsed
+Epoch 12,   451/ 1699; avg loss: 0.46; acc:  83.31;    6127 s elapsed
+Epoch 12,   501/ 1699; avg loss: 0.46; acc:  83.66;    6269 s elapsed
+Epoch 12,   551/ 1699; avg loss: 0.49; acc:  82.00;    6408 s elapsed
+Epoch 12,   601/ 1699; avg loss: 0.48; acc:  82.66;    6548 s elapsed
+Epoch 12,   651/ 1699; avg loss: 0.47; acc:  83.22;    6694 s elapsed
+Epoch 12,   701/ 1699; avg loss: 0.50; acc:  82.75;    6834 s elapsed
+Epoch 12,   751/ 1699; avg loss: 0.49; acc:  82.88;    6976 s elapsed
+Epoch 12,   801/ 1699; avg loss: 0.50; acc:  82.12;    7117 s elapsed
+Epoch 12,   851/ 1699; avg loss: 0.49; acc:  82.41;    7253 s elapsed
+Epoch 12,   901/ 1699; avg loss: 0.47; acc:  83.75;    7396 s elapsed
+Epoch 12,   951/ 1699; avg loss: 0.51; acc:  82.03;    7539 s elapsed
+Epoch 12,  1001/ 1699; avg loss: 0.51; acc:  82.47;    7684 s elapsed
+Epoch 12,  1051/ 1699; avg loss: 0.49; acc:  83.00;    7831 s elapsed
+Epoch 12,  1101/ 1699; avg loss: 0.54; acc:  81.34;    7970 s elapsed
+Epoch 12,  1151/ 1699; avg loss: 0.52; acc:  81.78;    8113 s elapsed
+Epoch 12,  1201/ 1699; avg loss: 0.55; acc:  81.28;    8258 s elapsed
+Epoch 12,  1251/ 1699; avg loss: 0.52; acc:  81.41;    8402 s elapsed
+Epoch 12,  1301/ 1699; avg loss: 0.53; acc:  81.72;    8543 s elapsed
+Epoch 12,  1351/ 1699; avg loss: 0.52; acc:  81.28;    8684 s elapsed
+Epoch 12,  1401/ 1699; avg loss: 0.50; acc:  81.19;    8829 s elapsed
+Epoch 12,  1451/ 1699; avg loss: 0.52; acc:  81.84;    8972 s elapsed
+Epoch 12,  1501/ 1699; avg loss: 0.51; acc:  82.31;    9118 s elapsed
+Epoch 12,  1551/ 1699; avg loss: 0.51; acc:  81.62;    9259 s elapsed
+Epoch 12,  1601/ 1699; avg loss: 0.52; acc:  81.59;    9403 s elapsed
+Epoch 12,  1651/ 1699; avg loss: 0.52; acc:  81.59;    9546 s elapsed
+Epoch 12:	 average loss: 0.49	 train accuracy: 82.8383
+====================
+Evaluating on validation set:
+Validation loss: 1.30
+Validation accuracy: 66.6
+====================
+
+Epoch 13,     1/ 1699; avg loss: 0.27; acc:  87.50;    9696 s elapsed
+Epoch 13,    51/ 1699; avg loss: 0.39; acc:  87.66;    9840 s elapsed
+Epoch 13,   101/ 1699; avg loss: 0.40; acc:  86.19;    9985 s elapsed
+Epoch 13,   151/ 1699; avg loss: 0.40; acc:  86.47;   10132 s elapsed
+Epoch 13,   201/ 1699; avg loss: 0.38; acc:  86.50;   10274 s elapsed
+Epoch 13,   251/ 1699; avg loss: 0.42; acc:  86.06;   10417 s elapsed
+Epoch 13,   301/ 1699; avg loss: 0.40; acc:  86.09;   10556 s elapsed
+Epoch 13,   351/ 1699; avg loss: 0.42; acc:  85.41;   10698 s elapsed
+Epoch 13,   401/ 1699; avg loss: 0.42; acc:  84.69;   10837 s elapsed
+Epoch 13,   451/ 1699; avg loss: 0.45; acc:  84.25;   10981 s elapsed
+Epoch 13,   501/ 1699; avg loss: 0.45; acc:  83.41;   11125 s elapsed
+Epoch 13,   551/ 1699; avg loss: 0.47; acc:  83.59;   11268 s elapsed
+Epoch 13,   601/ 1699; avg loss: 0.44; acc:  84.94;   11411 s elapsed
+Epoch 13,   651/ 1699; avg loss: 0.46; acc:  84.28;   11552 s elapsed
+Epoch 13,   701/ 1699; avg loss: 0.44; acc:  84.44;   11691 s elapsed
+Epoch 13,   751/ 1699; avg loss: 0.46; acc:  84.16;   11832 s elapsed
+Epoch 13,   801/ 1699; avg loss: 0.50; acc:  83.59;   11978 s elapsed
+Epoch 13,   851/ 1699; avg loss: 0.49; acc:  83.84;   12121 s elapsed
+Epoch 13,   901/ 1699; avg loss: 0.47; acc:  84.00;   12261 s elapsed
+Epoch 13,   951/ 1699; avg loss: 0.49; acc:  82.69;   12403 s elapsed
+Epoch 13,  1001/ 1699; avg loss: 0.49; acc:  83.06;   12543 s elapsed
+Epoch 13,  1051/ 1699; avg loss: 0.50; acc:  82.53;   12684 s elapsed
+Epoch 13,  1101/ 1699; avg loss: 0.49; acc:  82.75;   12824 s elapsed
+Epoch 13,  1151/ 1699; avg loss: 0.51; acc:  82.59;   12966 s elapsed
+Epoch 13,  1201/ 1699; avg loss: 0.49; acc:  83.53;   13113 s elapsed
+Epoch 13,  1251/ 1699; avg loss: 0.52; acc:  81.62;   13250 s elapsed
+Epoch 13,  1301/ 1699; avg loss: 0.50; acc:  83.00;   13391 s elapsed
+Epoch 13,  1351/ 1699; avg loss: 0.50; acc:  82.81;   13534 s elapsed
+Epoch 13,  1401/ 1699; avg loss: 0.50; acc:  81.97;   13674 s elapsed
+Epoch 13,  1451/ 1699; avg loss: 0.53; acc:  82.19;   13817 s elapsed
+Epoch 13,  1501/ 1699; avg loss: 0.52; acc:  81.91;   13964 s elapsed
+Epoch 13,  1551/ 1699; avg loss: 0.54; acc:  80.97;   14113 s elapsed
+Epoch 13,  1601/ 1699; avg loss: 0.52; acc:  81.44;   14251 s elapsed
+Epoch 13,  1651/ 1699; avg loss: 0.51; acc:  82.06;   14394 s elapsed
+Epoch 13:	 average loss: 0.47	 train accuracy: 83.7232
+====================
+Evaluating on validation set:
+Validation loss: 1.30
+Validation accuracy: 67.2
+====================
+
+Epoch 14,     1/ 1699; avg loss: 0.33; acc:  85.94;   14541 s elapsed
+Epoch 14,    51/ 1699; avg loss: 0.35; acc:  87.97;   14681 s elapsed
+Epoch 14,   101/ 1699; avg loss: 0.36; acc:  87.41;   14822 s elapsed
+Epoch 14,   151/ 1699; avg loss: 0.39; acc:  88.25;   14966 s elapsed
+Epoch 14,   201/ 1699; avg loss: 0.36; acc:  87.56;   15107 s elapsed
+Epoch 14,   251/ 1699; avg loss: 0.39; acc:  86.75;   15249 s elapsed
+Epoch 14,   301/ 1699; avg loss: 0.42; acc:  85.28;   15396 s elapsed
+Epoch 14,   351/ 1699; avg loss: 0.42; acc:  85.69;   15536 s elapsed
+Epoch 14,   401/ 1699; avg loss: 0.41; acc:  86.22;   15678 s elapsed
+Epoch 14,   451/ 1699; avg loss: 0.41; acc:  86.28;   15818 s elapsed
+Epoch 14,   501/ 1699; avg loss: 0.44; acc:  84.38;   15959 s elapsed
+Epoch 14,   551/ 1699; avg loss: 0.43; acc:  85.88;   16103 s elapsed
+Epoch 14,   601/ 1699; avg loss: 0.45; acc:  84.62;   16246 s elapsed
+Epoch 14,   651/ 1699; avg loss: 0.44; acc:  84.59;   16388 s elapsed
+Epoch 14,   701/ 1699; avg loss: 0.44; acc:  84.41;   16526 s elapsed
+Epoch 14,   751/ 1699; avg loss: 0.44; acc:  83.53;   16668 s elapsed
+Epoch 14,   801/ 1699; avg loss: 0.45; acc:  84.50;   16807 s elapsed
+Epoch 14,   851/ 1699; avg loss: 0.44; acc:  84.31;   16953 s elapsed
+Epoch 14,   901/ 1699; avg loss: 0.45; acc:  83.47;   17094 s elapsed
+Epoch 14,   951/ 1699; avg loss: 0.45; acc:  83.34;   17236 s elapsed
+Epoch 14,  1001/ 1699; avg loss: 0.49; acc:  83.25;   17379 s elapsed
+Epoch 14,  1051/ 1699; avg loss: 0.47; acc:  83.78;   17525 s elapsed
+Epoch 14,  1101/ 1699; avg loss: 0.49; acc:  83.06;   17665 s elapsed
+Epoch 14,  1151/ 1699; avg loss: 0.47; acc:  82.84;   17804 s elapsed
+Epoch 14,  1201/ 1699; avg loss: 0.50; acc:  82.72;   17945 s elapsed
+Epoch 14,  1251/ 1699; avg loss: 0.48; acc:  84.00;   18090 s elapsed
+Epoch 14,  1301/ 1699; avg loss: 0.49; acc:  82.53;   18232 s elapsed
+Epoch 14,  1351/ 1699; avg loss: 0.48; acc:  83.62;   18377 s elapsed
+Epoch 14,  1401/ 1699; avg loss: 0.48; acc:  83.56;   18520 s elapsed
+Epoch 14,  1451/ 1699; avg loss: 0.51; acc:  81.62;   18661 s elapsed
+Epoch 14,  1501/ 1699; avg loss: 0.50; acc:  82.75;   18803 s elapsed
+Epoch 14,  1551/ 1699; avg loss: 0.51; acc:  82.56;   18943 s elapsed
+Epoch 14,  1601/ 1699; avg loss: 0.49; acc:  82.78;   19090 s elapsed
+Epoch 14,  1651/ 1699; avg loss: 0.50; acc:  83.00;   19235 s elapsed
+Epoch 14:	 average loss: 0.45	 train accuracy: 84.3799
+====================
+Evaluating on validation set:
+Validation loss: 1.32
+Validation accuracy: 67.05
+====================
+
+Epoch 15,     1/ 1699; avg loss: 0.25; acc:  92.19;   19393 s elapsed
+Epoch 15,    51/ 1699; avg loss: 0.36; acc:  87.50;   19531 s elapsed
+Epoch 15,   101/ 1699; avg loss: 0.35; acc:  88.81;   19675 s elapsed
+Epoch 15,   151/ 1699; avg loss: 0.34; acc:  89.25;   19814 s elapsed
+Epoch 15,   201/ 1699; avg loss: 0.34; acc:  88.53;   19960 s elapsed
+Epoch 15,   251/ 1699; avg loss: 0.37; acc:  87.91;   20100 s elapsed
+Epoch 15,   301/ 1699; avg loss: 0.35; acc:  87.69;   20244 s elapsed
+Epoch 15,   351/ 1699; avg loss: 0.40; acc:  86.06;   20385 s elapsed
+Epoch 15,   401/ 1699; avg loss: 0.39; acc:  87.34;   20528 s elapsed
+Epoch 15,   451/ 1699; avg loss: 0.41; acc:  85.44;   20672 s elapsed
+Epoch 15,   501/ 1699; avg loss: 0.40; acc:  86.69;   20813 s elapsed
+Epoch 15,   551/ 1699; avg loss: 0.40; acc:  86.16;   20957 s elapsed
+Epoch 15,   601/ 1699; avg loss: 0.40; acc:  86.12;   21097 s elapsed
+Epoch 15,   651/ 1699; avg loss: 0.41; acc:  85.59;   21240 s elapsed
+Epoch 15,   701/ 1699; avg loss: 0.41; acc:  86.03;   21381 s elapsed
+Epoch 15,   751/ 1699; avg loss: 0.42; acc:  85.31;   21524 s elapsed
+Epoch 15,   801/ 1699; avg loss: 0.44; acc:  84.56;   21665 s elapsed
+Epoch 15,   851/ 1699; avg loss: 0.43; acc:  84.50;   21809 s elapsed
+Epoch 15,   901/ 1699; avg loss: 0.48; acc:  83.41;   21958 s elapsed
+Epoch 15,   951/ 1699; avg loss: 0.46; acc:  84.06;   22101 s elapsed
+Epoch 15,  1001/ 1699; avg loss: 0.45; acc:  84.66;   22245 s elapsed
+Epoch 15,  1051/ 1699; avg loss: 0.45; acc:  84.28;   22385 s elapsed
+Epoch 15,  1101/ 1699; avg loss: 0.47; acc:  83.56;   22527 s elapsed
+Epoch 15,  1151/ 1699; avg loss: 0.45; acc:  84.44;   22668 s elapsed
+Epoch 15,  1201/ 1699; avg loss: 0.48; acc:  83.62;   22807 s elapsed
+Epoch 15,  1251/ 1699; avg loss: 0.48; acc:  82.94;   22951 s elapsed
+Epoch 15,  1301/ 1699; avg loss: 0.47; acc:  83.16;   23098 s elapsed
+Epoch 15,  1351/ 1699; avg loss: 0.49; acc:  82.97;   23241 s elapsed
+Epoch 15,  1401/ 1699; avg loss: 0.47; acc:  83.56;   23388 s elapsed
+Epoch 15,  1451/ 1699; avg loss: 0.49; acc:  82.59;   23530 s elapsed
+Epoch 15,  1501/ 1699; avg loss: 0.45; acc:  84.62;   23671 s elapsed
+Epoch 15,  1551/ 1699; avg loss: 0.48; acc:  84.00;   23810 s elapsed
+Epoch 15,  1601/ 1699; avg loss: 0.49; acc:  82.59;   23953 s elapsed
+Epoch 15,  1651/ 1699; avg loss: 0.49; acc:  83.44;   24095 s elapsed
+Epoch 15:	 average loss: 0.43	 train accuracy: 85.1489
+====================
+Evaluating on validation set:
+Validation loss: 1.37
+Validation accuracy: 65.85
+====================
+
+Epoch 16,     1/ 1699; avg loss: 0.31; acc:  92.19;   24243 s elapsed
+Epoch 16,    51/ 1699; avg loss: 0.34; acc:  88.72;   24386 s elapsed
+Epoch 16,   101/ 1699; avg loss: 0.34; acc:  88.62;   24526 s elapsed
+Epoch 16,   151/ 1699; avg loss: 0.32; acc:  89.28;   24671 s elapsed
+Epoch 16,   201/ 1699; avg loss: 0.33; acc:  88.75;   24814 s elapsed
+Epoch 16,   251/ 1699; avg loss: 0.34; acc:  88.25;   24961 s elapsed
+Epoch 16,   301/ 1699; avg loss: 0.37; acc:  87.38;   25103 s elapsed
+Epoch 16,   351/ 1699; avg loss: 0.37; acc:  87.34;   25246 s elapsed
+Epoch 16,   401/ 1699; avg loss: 0.39; acc:  86.91;   25385 s elapsed
+Epoch 16,   451/ 1699; avg loss: 0.38; acc:  87.06;   25528 s elapsed
+Epoch 16,   501/ 1699; avg loss: 0.36; acc:  87.78;   25667 s elapsed
+Epoch 16,   551/ 1699; avg loss: 0.39; acc:  86.16;   25806 s elapsed
+Epoch 16,   601/ 1699; avg loss: 0.41; acc:  86.12;   25952 s elapsed
+Epoch 16,   651/ 1699; avg loss: 0.41; acc:  85.69;   26092 s elapsed
+Epoch 16,   701/ 1699; avg loss: 0.41; acc:  85.44;   26233 s elapsed
+Epoch 16,   751/ 1699; avg loss: 0.41; acc:  85.16;   26372 s elapsed
+Epoch 16,   801/ 1699; avg loss: 0.42; acc:  85.19;   26514 s elapsed
+Epoch 16,   851/ 1699; avg loss: 0.42; acc:  86.09;   26656 s elapsed
+Epoch 16,   901/ 1699; avg loss: 0.43; acc:  84.94;   26799 s elapsed
+Epoch 16,   951/ 1699; avg loss: 0.41; acc:  86.28;   26941 s elapsed
+Epoch 16,  1001/ 1699; avg loss: 0.45; acc:  84.56;   27082 s elapsed
+Epoch 16,  1051/ 1699; avg loss: 0.44; acc:  84.97;   27222 s elapsed
+Epoch 16,  1101/ 1699; avg loss: 0.44; acc:  84.88;   27369 s elapsed
+Epoch 16,  1151/ 1699; avg loss: 0.43; acc:  84.97;   27513 s elapsed
+Epoch 16,  1201/ 1699; avg loss: 0.44; acc:  84.88;   27654 s elapsed
+Epoch 16,  1251/ 1699; avg loss: 0.44; acc:  85.06;   27798 s elapsed
+Epoch 16,  1301/ 1699; avg loss: 0.45; acc:  84.66;   27938 s elapsed
+Epoch 16,  1351/ 1699; avg loss: 0.47; acc:  83.91;   28085 s elapsed
+Epoch 16,  1401/ 1699; avg loss: 0.46; acc:  84.62;   28227 s elapsed
+Epoch 16,  1451/ 1699; avg loss: 0.46; acc:  83.34;   28372 s elapsed
+Epoch 16,  1501/ 1699; avg loss: 0.44; acc:  84.72;   28511 s elapsed
+Epoch 16,  1551/ 1699; avg loss: 0.48; acc:  83.97;   28653 s elapsed
+Epoch 16,  1601/ 1699; avg loss: 0.45; acc:  83.34;   28796 s elapsed
+Epoch 16,  1651/ 1699; avg loss: 0.45; acc:  83.88;   28938 s elapsed
+Epoch 16:	 average loss: 0.41	 train accuracy: 85.7835
+====================
+Evaluating on validation set:
+Validation loss: 1.41
+Validation accuracy: 65.15
+====================
+
+Epoch 17,     1/ 1699; avg loss: 0.27; acc:  85.94;   29086 s elapsed
+Epoch 17,    51/ 1699; avg loss: 0.30; acc:  90.12;   29226 s elapsed
+Epoch 17,   101/ 1699; avg loss: 0.31; acc:  89.41;   29367 s elapsed
+Epoch 17,   151/ 1699; avg loss: 0.31; acc:  89.41;   29509 s elapsed
+Epoch 17,   201/ 1699; avg loss: 0.33; acc:  88.69;   29650 s elapsed
+Epoch 17,   251/ 1699; avg loss: 0.32; acc:  89.16;   29791 s elapsed
+Epoch 17,   301/ 1699; avg loss: 0.33; acc:  88.31;   29931 s elapsed
+Epoch 17,   351/ 1699; avg loss: 0.34; acc:  88.62;   30078 s elapsed
+Epoch 17,   401/ 1699; avg loss: 0.37; acc:  87.53;   30220 s elapsed
+Epoch 17,   451/ 1699; avg loss: 0.38; acc:  87.19;   30363 s elapsed
+Epoch 17,   501/ 1699; avg loss: 0.37; acc:  86.66;   30504 s elapsed
+Epoch 17,   551/ 1699; avg loss: 0.37; acc:  87.75;   30646 s elapsed
+Epoch 17,   601/ 1699; avg loss: 0.38; acc:  86.97;   30789 s elapsed
+Epoch 17,   651/ 1699; avg loss: 0.39; acc:  86.78;   30932 s elapsed
+Epoch 17,   701/ 1699; avg loss: 0.39; acc:  86.53;   31080 s elapsed
+Epoch 17,   751/ 1699; avg loss: 0.41; acc:  85.97;   31222 s elapsed
+Epoch 17,   801/ 1699; avg loss: 0.40; acc:  86.91;   31367 s elapsed
+Epoch 17,   851/ 1699; avg loss: 0.40; acc:  86.16;   31508 s elapsed
+Epoch 17,   901/ 1699; avg loss: 0.41; acc:  85.56;   31649 s elapsed
+Epoch 17,   951/ 1699; avg loss: 0.40; acc:  85.78;   31792 s elapsed
+Epoch 17,  1001/ 1699; avg loss: 0.40; acc:  87.16;   31936 s elapsed
+Epoch 17,  1051/ 1699; avg loss: 0.42; acc:  85.94;   32076 s elapsed
+Epoch 17,  1101/ 1699; avg loss: 0.40; acc:  85.97;   32219 s elapsed
+Epoch 17,  1151/ 1699; avg loss: 0.43; acc:  85.69;   32359 s elapsed
+Epoch 17,  1201/ 1699; avg loss: 0.42; acc:  85.28;   32499 s elapsed
+Epoch 17,  1251/ 1699; avg loss: 0.42; acc:  85.56;   32637 s elapsed
+Epoch 17,  1301/ 1699; avg loss: 0.44; acc:  84.34;   32780 s elapsed
+Epoch 17,  1351/ 1699; avg loss: 0.44; acc:  84.38;   32917 s elapsed
+Epoch 17,  1401/ 1699; avg loss: 0.46; acc:  84.62;   33058 s elapsed
+Epoch 17,  1451/ 1699; avg loss: 0.43; acc:  85.31;   33197 s elapsed
+Epoch 17,  1501/ 1699; avg loss: 0.44; acc:  84.09;   33340 s elapsed
+Epoch 17,  1551/ 1699; avg loss: 0.45; acc:  84.59;   33481 s elapsed
+Epoch 17,  1601/ 1699; avg loss: 0.45; acc:  84.50;   33625 s elapsed
+Epoch 17,  1651/ 1699; avg loss: 0.44; acc:  84.44;   33766 s elapsed
+Epoch 17:	 average loss: 0.39	 train accuracy: 86.4679
+====================
+Evaluating on validation set:
+Validation loss: 1.40
+Validation accuracy: 66.85
+====================
+
+Epoch 18,     1/ 1699; avg loss: 0.15; acc:  96.88;   33924 s elapsed
+Epoch 18,    51/ 1699; avg loss: 0.30; acc:  90.38;   34063 s elapsed
+Epoch 18,   101/ 1699; avg loss: 0.28; acc:  90.59;   34207 s elapsed
+Epoch 18,   151/ 1699; avg loss: 0.29; acc:  90.44;   34346 s elapsed
+Epoch 18,   201/ 1699; avg loss: 0.29; acc:  90.41;   34488 s elapsed
+Epoch 18,   251/ 1699; avg loss: 0.32; acc:  89.69;   34631 s elapsed
+Epoch 18,   301/ 1699; avg loss: 0.32; acc:  88.94;   34778 s elapsed
+Epoch 18,   351/ 1699; avg loss: 0.34; acc:  87.75;   34918 s elapsed
+Epoch 18,   401/ 1699; avg loss: 0.34; acc:  88.16;   35061 s elapsed
+Epoch 18,   451/ 1699; avg loss: 0.36; acc:  88.06;   35202 s elapsed
+Epoch 18,   501/ 1699; avg loss: 0.33; acc:  88.56;   35345 s elapsed
+Epoch 18,   551/ 1699; avg loss: 0.33; acc:  89.12;   35491 s elapsed
+Epoch 18,   601/ 1699; avg loss: 0.37; acc:  87.06;   35631 s elapsed
+Epoch 18,   651/ 1699; avg loss: 0.36; acc:  87.75;   35768 s elapsed
+Epoch 18,   701/ 1699; avg loss: 0.36; acc:  87.59;   35905 s elapsed
+Epoch 18,   751/ 1699; avg loss: 0.37; acc:  86.97;   36049 s elapsed
+Epoch 18,   801/ 1699; avg loss: 0.39; acc:  87.12;   36188 s elapsed
+Epoch 18,   851/ 1699; avg loss: 0.36; acc:  87.72;   36337 s elapsed
+Epoch 18,   901/ 1699; avg loss: 0.38; acc:  87.47;   36475 s elapsed
+Epoch 18,   951/ 1699; avg loss: 0.38; acc:  87.41;   36616 s elapsed
+Epoch 18,  1001/ 1699; avg loss: 0.38; acc:  87.31;   36760 s elapsed
+Epoch 18,  1051/ 1699; avg loss: 0.39; acc:  86.50;   36903 s elapsed
+Epoch 18,  1101/ 1699; avg loss: 0.40; acc:  86.62;   37044 s elapsed
+Epoch 18,  1151/ 1699; avg loss: 0.43; acc:  85.81;   37186 s elapsed
+Epoch 18,  1201/ 1699; avg loss: 0.42; acc:  86.09;   37329 s elapsed
+Epoch 18,  1251/ 1699; avg loss: 0.41; acc:  86.41;   37470 s elapsed
+Epoch 18,  1301/ 1699; avg loss: 0.41; acc:  86.19;   37614 s elapsed
+Epoch 18,  1351/ 1699; avg loss: 0.40; acc:  85.81;   37758 s elapsed
+Epoch 18,  1401/ 1699; avg loss: 0.43; acc:  85.25;   37899 s elapsed
+Epoch 18,  1451/ 1699; avg loss: 0.43; acc:  84.88;   38044 s elapsed
+Epoch 18,  1501/ 1699; avg loss: 0.46; acc:  85.47;   38187 s elapsed
+Epoch 18,  1551/ 1699; avg loss: 0.40; acc:  85.75;   38328 s elapsed
+Epoch 18,  1601/ 1699; avg loss: 0.44; acc:  84.41;   38471 s elapsed
+Epoch 18,  1651/ 1699; avg loss: 0.47; acc:  83.78;   38615 s elapsed
+Epoch 18:	 average loss: 0.38	 train accuracy: 87.2341
+====================
+Evaluating on validation set:
+Validation loss: 1.42
+Validation accuracy: 65.85
+====================
+
+Epoch 19,     1/ 1699; avg loss: 0.33; acc:  89.06;   38764 s elapsed
+Epoch 19,    51/ 1699; avg loss: 0.28; acc:  91.41;   38906 s elapsed
+Epoch 19,   101/ 1699; avg loss: 0.27; acc:  90.91;   39044 s elapsed
+Epoch 19,   151/ 1699; avg loss: 0.28; acc:  90.34;   39190 s elapsed
+Epoch 19,   201/ 1699; avg loss: 0.30; acc:  90.19;   39334 s elapsed
+Epoch 19,   251/ 1699; avg loss: 0.29; acc:  90.44;   39475 s elapsed
+Epoch 19,   301/ 1699; avg loss: 0.30; acc:  90.25;   39618 s elapsed
+Epoch 19,   351/ 1699; avg loss: 0.29; acc:  89.50;   39759 s elapsed
+Epoch 19,   401/ 1699; avg loss: 0.32; acc:  89.19;   39901 s elapsed
+Epoch 19,   451/ 1699; avg loss: 0.32; acc:  89.75;   40045 s elapsed
+Epoch 19,   501/ 1699; avg loss: 0.33; acc:  88.53;   40186 s elapsed
+Epoch 19,   551/ 1699; avg loss: 0.35; acc:  88.16;   40325 s elapsed
+Epoch 19,   601/ 1699; avg loss: 0.35; acc:  87.91;   40468 s elapsed
+Epoch 19,   651/ 1699; avg loss: 0.35; acc:  88.28;   40609 s elapsed
+Epoch 19,   701/ 1699; avg loss: 0.36; acc:  87.44;   40753 s elapsed
+Epoch 19,   751/ 1699; avg loss: 0.34; acc:  88.31;   40893 s elapsed
+Epoch 19,   801/ 1699; avg loss: 0.36; acc:  87.62;   41035 s elapsed
+Epoch 19,   851/ 1699; avg loss: 0.39; acc:  86.84;   41175 s elapsed
+Epoch 19,   901/ 1699; avg loss: 0.37; acc:  86.16;   41315 s elapsed
+Epoch 19,   951/ 1699; avg loss: 0.37; acc:  87.56;   41456 s elapsed
+Epoch 19,  1001/ 1699; avg loss: 0.39; acc:  86.94;   41596 s elapsed
+Epoch 19,  1051/ 1699; avg loss: 0.41; acc:  86.75;   41737 s elapsed
+Epoch 19,  1101/ 1699; avg loss: 0.37; acc:  87.41;   41883 s elapsed
+Epoch 19,  1151/ 1699; avg loss: 0.41; acc:  85.28;   42027 s elapsed
+Epoch 19,  1201/ 1699; avg loss: 0.39; acc:  87.28;   42168 s elapsed
+Epoch 19,  1251/ 1699; avg loss: 0.40; acc:  85.38;   42310 s elapsed
+Epoch 19,  1301/ 1699; avg loss: 0.40; acc:  86.38;   42452 s elapsed
+Epoch 19,  1351/ 1699; avg loss: 0.43; acc:  85.16;   42590 s elapsed
+Epoch 19,  1401/ 1699; avg loss: 0.40; acc:  86.62;   42734 s elapsed
+Epoch 19,  1451/ 1699; avg loss: 0.40; acc:  86.12;   42879 s elapsed
+Epoch 19,  1501/ 1699; avg loss: 0.41; acc:  86.41;   43025 s elapsed
+Epoch 19,  1551/ 1699; avg loss: 0.41; acc:  85.69;   43166 s elapsed
+Epoch 19,  1601/ 1699; avg loss: 0.41; acc:  86.38;   43306 s elapsed
+Epoch 19,  1651/ 1699; avg loss: 0.41; acc:  86.00;   43451 s elapsed
+Epoch 19:	 average loss: 0.36	 train accuracy: 87.693
+====================
+Evaluating on validation set:
+Validation loss: 1.44
+Validation accuracy: 66.1
+====================
+
+Epoch 20,     1/ 1699; avg loss: 0.17; acc:  95.31;   43606 s elapsed
+Epoch 20,    51/ 1699; avg loss: 0.27; acc:  91.28;   43749 s elapsed
+Epoch 20,   101/ 1699; avg loss: 0.26; acc:  91.56;   43891 s elapsed
+Epoch 20,   151/ 1699; avg loss: 0.26; acc:  91.28;   44031 s elapsed
+Epoch 20,   201/ 1699; avg loss: 0.27; acc:  90.91;   44175 s elapsed
+Epoch 20,   251/ 1699; avg loss: 0.27; acc:  91.03;   44320 s elapsed
+Epoch 20,   301/ 1699; avg loss: 0.27; acc:  90.72;   44461 s elapsed
+Epoch 20,   351/ 1699; avg loss: 0.29; acc:  90.06;   44600 s elapsed
+Epoch 20,   401/ 1699; avg loss: 0.28; acc:  90.94;   44736 s elapsed
+Epoch 20,   451/ 1699; avg loss: 0.30; acc:  89.59;   44877 s elapsed
+Epoch 20,   501/ 1699; avg loss: 0.32; acc:  89.06;   45016 s elapsed
+Epoch 20,   551/ 1699; avg loss: 0.33; acc:  88.31;   45158 s elapsed
+Epoch 20,   601/ 1699; avg loss: 0.34; acc:  88.22;   45300 s elapsed
+Epoch 20,   651/ 1699; avg loss: 0.35; acc:  88.44;   45441 s elapsed
+Epoch 20,   701/ 1699; avg loss: 0.34; acc:  88.47;   45584 s elapsed
+Epoch 20,   751/ 1699; avg loss: 0.31; acc:  89.12;   45729 s elapsed
+Epoch 20,   801/ 1699; avg loss: 0.35; acc:  88.06;   45871 s elapsed
+Epoch 20,   851/ 1699; avg loss: 0.35; acc:  88.19;   46016 s elapsed
+Epoch 20,   901/ 1699; avg loss: 0.34; acc:  88.41;   46162 s elapsed
+Epoch 20,   951/ 1699; avg loss: 0.35; acc:  88.56;   46301 s elapsed
+Epoch 20,  1001/ 1699; avg loss: 0.40; acc:  86.81;   46447 s elapsed
+Epoch 20,  1051/ 1699; avg loss: 0.36; acc:  87.62;   46586 s elapsed
+Epoch 20,  1101/ 1699; avg loss: 0.37; acc:  87.47;   46726 s elapsed
+Epoch 20,  1151/ 1699; avg loss: 0.37; acc:  87.47;   46868 s elapsed
+Epoch 20,  1201/ 1699; avg loss: 0.38; acc:  86.41;   47009 s elapsed
+Epoch 20,  1251/ 1699; avg loss: 0.38; acc:  87.16;   47157 s elapsed
+Epoch 20,  1301/ 1699; avg loss: 0.37; acc:  87.34;   47296 s elapsed
+Epoch 20,  1351/ 1699; avg loss: 0.40; acc:  86.94;   47441 s elapsed
+Epoch 20,  1401/ 1699; avg loss: 0.38; acc:  87.22;   47585 s elapsed
+Epoch 20,  1451/ 1699; avg loss: 0.37; acc:  87.66;   47723 s elapsed
+Epoch 20,  1501/ 1699; avg loss: 0.41; acc:  86.69;   47870 s elapsed
+Epoch 20,  1551/ 1699; avg loss: 0.42; acc:  85.78;   48011 s elapsed
+Epoch 20,  1601/ 1699; avg loss: 0.39; acc:  86.03;   48153 s elapsed
+Epoch 20,  1651/ 1699; avg loss: 0.40; acc:  86.00;   48296 s elapsed
+Epoch 20:	 average loss: 0.34	 train accuracy: 88.3829
+====================
+Evaluating on validation set:
+Validation loss: 1.49
+Validation accuracy: 66.65
+====================
+
+Epoch 21,     1/ 1699; avg loss: 0.23; acc:  93.75;   48447 s elapsed
+Epoch 21,    51/ 1699; avg loss: 0.24; acc:  92.44;   48589 s elapsed
+Epoch 21,   101/ 1699; avg loss: 0.25; acc:  92.06;   48730 s elapsed
+Epoch 21,   151/ 1699; avg loss: 0.26; acc:  91.12;   48877 s elapsed
+Epoch 21,   201/ 1699; avg loss: 0.26; acc:  91.84;   49019 s elapsed
+Epoch 21,   251/ 1699; avg loss: 0.26; acc:  91.59;   49165 s elapsed
+Epoch 21,   301/ 1699; avg loss: 0.26; acc:  91.09;   49304 s elapsed
+Epoch 21,   351/ 1699; avg loss: 0.28; acc:  90.53;   49450 s elapsed
+Epoch 21,   401/ 1699; avg loss: 0.28; acc:  90.38;   49586 s elapsed
+Epoch 21,   451/ 1699; avg loss: 0.28; acc:  90.75;   49731 s elapsed
+Epoch 21,   501/ 1699; avg loss: 0.26; acc:  91.41;   49874 s elapsed
+Epoch 21,   551/ 1699; avg loss: 0.28; acc:  90.22;   50017 s elapsed
+Epoch 21,   601/ 1699; avg loss: 0.30; acc:  89.41;   50163 s elapsed
+Epoch 21,   651/ 1699; avg loss: 0.30; acc:  90.84;   50306 s elapsed
+Epoch 21,   701/ 1699; avg loss: 0.32; acc:  89.38;   50447 s elapsed
+Epoch 21,   751/ 1699; avg loss: 0.31; acc:  89.47;   50589 s elapsed
+Epoch 21,   801/ 1699; avg loss: 0.32; acc:  88.81;   50731 s elapsed
+Epoch 21,   851/ 1699; avg loss: 0.33; acc:  88.66;   50874 s elapsed
+Epoch 21,   901/ 1699; avg loss: 0.34; acc:  88.28;   51015 s elapsed
+Epoch 21,   951/ 1699; avg loss: 0.35; acc:  87.88;   51157 s elapsed
+Epoch 21,  1001/ 1699; avg loss: 0.34; acc:  89.31;   51298 s elapsed
+Epoch 21,  1051/ 1699; avg loss: 0.34; acc:  88.84;   51443 s elapsed
+Epoch 21,  1101/ 1699; avg loss: 0.35; acc:  88.25;   51588 s elapsed
+Epoch 21,  1151/ 1699; avg loss: 0.36; acc:  87.91;   51730 s elapsed
+Epoch 21,  1201/ 1699; avg loss: 0.37; acc:  87.25;   51870 s elapsed
+Epoch 21,  1251/ 1699; avg loss: 0.36; acc:  87.53;   52013 s elapsed
+Epoch 21,  1301/ 1699; avg loss: 0.35; acc:  87.94;   52150 s elapsed
+Epoch 21,  1351/ 1699; avg loss: 0.35; acc:  88.75;   52289 s elapsed
+Epoch 21,  1401/ 1699; avg loss: 0.36; acc:  88.34;   52433 s elapsed
+Epoch 21,  1451/ 1699; avg loss: 0.40; acc:  85.91;   52573 s elapsed
+Epoch 21,  1501/ 1699; avg loss: 0.37; acc:  87.97;   52714 s elapsed
+Epoch 21,  1551/ 1699; avg loss: 0.41; acc:  85.47;   52858 s elapsed
+Epoch 21,  1601/ 1699; avg loss: 0.42; acc:  85.50;   53001 s elapsed
+Epoch 21,  1651/ 1699; avg loss: 0.42; acc:  86.25;   53145 s elapsed
+Epoch 21:	 average loss: 0.33	 train accuracy: 89.07
+====================
+Evaluating on validation set:
+Validation loss: 1.65
+Validation accuracy: 64.8
+====================
+
+Epoch 22,     1/ 1699; avg loss: 0.21; acc:  93.75;   53298 s elapsed
+Epoch 22,    51/ 1699; avg loss: 0.24; acc:  92.62;   53437 s elapsed
+Epoch 22,   101/ 1699; avg loss: 0.22; acc:  93.31;   53580 s elapsed
+Epoch 22,   151/ 1699; avg loss: 0.24; acc:  92.00;   53724 s elapsed
+Epoch 22,   201/ 1699; avg loss: 0.22; acc:  93.06;   53864 s elapsed
+Epoch 22,   251/ 1699; avg loss: 0.25; acc:  91.47;   54004 s elapsed
+Epoch 22,   301/ 1699; avg loss: 0.24; acc:  92.59;   54144 s elapsed
+Epoch 22,   351/ 1699; avg loss: 0.26; acc:  91.78;   54288 s elapsed
+Epoch 22,   401/ 1699; avg loss: 0.26; acc:  91.34;   54432 s elapsed
+Epoch 22,   451/ 1699; avg loss: 0.27; acc:  90.88;   54573 s elapsed
+Epoch 22,   501/ 1699; avg loss: 0.29; acc:  90.38;   54715 s elapsed
+Epoch 22,   551/ 1699; avg loss: 0.31; acc:  89.56;   54859 s elapsed
+Epoch 22,   601/ 1699; avg loss: 0.30; acc:  89.91;   55000 s elapsed
+Epoch 22,   651/ 1699; avg loss: 0.30; acc:  89.75;   55139 s elapsed
+Epoch 22,   701/ 1699; avg loss: 0.32; acc:  88.59;   55280 s elapsed
+Epoch 22,   751/ 1699; avg loss: 0.29; acc:  90.31;   55423 s elapsed
+Epoch 22,   801/ 1699; avg loss: 0.30; acc:  89.44;   55564 s elapsed
+Epoch 22,   851/ 1699; avg loss: 0.33; acc:  89.16;   55705 s elapsed
+Epoch 22,   901/ 1699; avg loss: 0.33; acc:  89.16;   55845 s elapsed
+Epoch 22,   951/ 1699; avg loss: 0.32; acc:  89.69;   55985 s elapsed
+Epoch 22,  1001/ 1699; avg loss: 0.32; acc:  88.53;   56124 s elapsed
+Epoch 22,  1051/ 1699; avg loss: 0.33; acc:  88.62;   56272 s elapsed
+Epoch 22,  1101/ 1699; avg loss: 0.34; acc:  88.28;   56412 s elapsed
+Epoch 22,  1151/ 1699; avg loss: 0.37; acc:  88.31;   56559 s elapsed
+Epoch 22,  1201/ 1699; avg loss: 0.34; acc:  87.75;   56704 s elapsed
+Epoch 22,  1251/ 1699; avg loss: 0.33; acc:  88.78;   56851 s elapsed
+Epoch 22,  1301/ 1699; avg loss: 0.35; acc:  88.22;   56993 s elapsed
+Epoch 22,  1351/ 1699; avg loss: 0.36; acc:  88.09;   57137 s elapsed
+Epoch 22,  1401/ 1699; avg loss: 0.36; acc:  88.22;   57278 s elapsed
+Epoch 22,  1451/ 1699; avg loss: 0.36; acc:  87.34;   57418 s elapsed
+Epoch 22,  1501/ 1699; avg loss: 0.38; acc:  87.03;   57564 s elapsed
+Epoch 22,  1551/ 1699; avg loss: 0.37; acc:  87.03;   57706 s elapsed
+Epoch 22,  1601/ 1699; avg loss: 0.34; acc:  88.50;   57847 s elapsed
+Epoch 22,  1651/ 1699; avg loss: 0.37; acc:  88.00;   57991 s elapsed
+Epoch 22:	 average loss: 0.31	 train accuracy: 89.5593
+====================
+Evaluating on validation set:
+Validation loss: 1.60
+Validation accuracy: 66.5
+====================
+
+Epoch 23,     1/ 1699; avg loss: 0.22; acc:  93.75;   58140 s elapsed
+Epoch 23,    51/ 1699; avg loss: 0.22; acc:  92.97;   58281 s elapsed
+Epoch 23,   101/ 1699; avg loss: 0.21; acc:  93.56;   58419 s elapsed
+Epoch 23,   151/ 1699; avg loss: 0.21; acc:  93.78;   58560 s elapsed
+Epoch 23,   201/ 1699; avg loss: 0.20; acc:  93.31;   58705 s elapsed
+Epoch 23,   251/ 1699; avg loss: 0.25; acc:  91.56;   58845 s elapsed
+Epoch 23,   301/ 1699; avg loss: 0.23; acc:  92.78;   58986 s elapsed
+Epoch 23,   351/ 1699; avg loss: 0.25; acc:  92.28;   59132 s elapsed
+Epoch 23,   401/ 1699; avg loss: 0.24; acc:  92.28;   59272 s elapsed
+Epoch 23,   451/ 1699; avg loss: 0.26; acc:  91.25;   59413 s elapsed
+Epoch 23,   501/ 1699; avg loss: 0.26; acc:  91.12;   59556 s elapsed
+Epoch 23,   551/ 1699; avg loss: 0.26; acc:  91.56;   59698 s elapsed
+Epoch 23,   601/ 1699; avg loss: 0.26; acc:  91.00;   59839 s elapsed
+Epoch 23,   651/ 1699; avg loss: 0.28; acc:  90.69;   59983 s elapsed
+Epoch 23,   701/ 1699; avg loss: 0.29; acc:  90.03;   60123 s elapsed
+Epoch 23,   751/ 1699; avg loss: 0.28; acc:  90.38;   60266 s elapsed
+Epoch 23,   801/ 1699; avg loss: 0.31; acc:  89.88;   60413 s elapsed
+Epoch 23,   851/ 1699; avg loss: 0.32; acc:  88.62;   60554 s elapsed
+Epoch 23,   901/ 1699; avg loss: 0.30; acc:  89.84;   60697 s elapsed
+Epoch 23,   951/ 1699; avg loss: 0.33; acc:  88.53;   60838 s elapsed
+Epoch 23,  1001/ 1699; avg loss: 0.34; acc:  88.22;   60982 s elapsed
+Epoch 23,  1051/ 1699; avg loss: 0.33; acc:  89.06;   61123 s elapsed
+Epoch 23,  1101/ 1699; avg loss: 0.33; acc:  89.53;   61268 s elapsed
+Epoch 23,  1151/ 1699; avg loss: 0.34; acc:  88.94;   61407 s elapsed
+Epoch 23,  1201/ 1699; avg loss: 0.35; acc:  89.00;   61546 s elapsed
+Epoch 23,  1251/ 1699; avg loss: 0.32; acc:  89.50;   61689 s elapsed
+Epoch 23,  1301/ 1699; avg loss: 0.34; acc:  89.44;   61830 s elapsed
+Epoch 23,  1351/ 1699; avg loss: 0.34; acc:  89.25;   61974 s elapsed
+Epoch 23,  1401/ 1699; avg loss: 0.36; acc:  88.09;   62113 s elapsed
+Epoch 23,  1451/ 1699; avg loss: 0.33; acc:  88.44;   62260 s elapsed
+Epoch 23,  1501/ 1699; avg loss: 0.34; acc:  88.25;   62405 s elapsed
+Epoch 23,  1551/ 1699; avg loss: 0.36; acc:  87.72;   62546 s elapsed
+Epoch 23,  1601/ 1699; avg loss: 0.35; acc:  88.56;   62689 s elapsed
+Epoch 23,  1651/ 1699; avg loss: 0.36; acc:  87.88;   62832 s elapsed
+Epoch 23:	 average loss: 0.30	 train accuracy: 90.1406
+====================
+Evaluating on validation set:
+Validation loss: 1.67
+Validation accuracy: 66.3
+====================
+
+Epoch 24,     1/ 1699; avg loss: 0.20; acc:  92.19;   62977 s elapsed
+Epoch 24,    51/ 1699; avg loss: 0.22; acc:  93.16;   63122 s elapsed
+Epoch 24,   101/ 1699; avg loss: 0.19; acc:  93.91;   63262 s elapsed
+Epoch 24,   151/ 1699; avg loss: 0.21; acc:  92.62;   63405 s elapsed
+Epoch 24,   201/ 1699; avg loss: 0.21; acc:  93.19;   63547 s elapsed
+Epoch 24,   251/ 1699; avg loss: 0.22; acc:  93.06;   63689 s elapsed
+Epoch 24,   301/ 1699; avg loss: 0.24; acc:  92.22;   63828 s elapsed
+Epoch 24,   351/ 1699; avg loss: 0.23; acc:  92.09;   63966 s elapsed
+Epoch 24,   401/ 1699; avg loss: 0.25; acc:  91.56;   64108 s elapsed
+Epoch 24,   451/ 1699; avg loss: 0.25; acc:  92.12;   64248 s elapsed
+Epoch 24,   501/ 1699; avg loss: 0.25; acc:  92.28;   64392 s elapsed
+Epoch 24,   551/ 1699; avg loss: 0.25; acc:  92.41;   64537 s elapsed
+Epoch 24,   601/ 1699; avg loss: 0.24; acc:  92.03;   64680 s elapsed
+Epoch 24,   651/ 1699; avg loss: 0.28; acc:  90.00;   64823 s elapsed
+Epoch 24,   701/ 1699; avg loss: 0.26; acc:  91.84;   64968 s elapsed
+Epoch 24,   751/ 1699; avg loss: 0.28; acc:  90.59;   65112 s elapsed
+Epoch 24,   801/ 1699; avg loss: 0.28; acc:  90.53;   65252 s elapsed
+Epoch 24,   851/ 1699; avg loss: 0.30; acc:  89.72;   65394 s elapsed
+Epoch 24,   901/ 1699; avg loss: 0.30; acc:  90.44;   65536 s elapsed
+Epoch 24,   951/ 1699; avg loss: 0.28; acc:  90.69;   65680 s elapsed
+Epoch 24,  1001/ 1699; avg loss: 0.30; acc:  89.81;   65824 s elapsed
+Epoch 24,  1051/ 1699; avg loss: 0.31; acc:  90.00;   65964 s elapsed
+Epoch 24,  1101/ 1699; avg loss: 0.32; acc:  89.25;   66105 s elapsed
+Epoch 24,  1151/ 1699; avg loss: 0.30; acc:  89.78;   66248 s elapsed
+Epoch 24,  1201/ 1699; avg loss: 0.33; acc:  88.47;   66388 s elapsed
+Epoch 24,  1251/ 1699; avg loss: 0.30; acc:  89.34;   66532 s elapsed
+Epoch 24,  1301/ 1699; avg loss: 0.35; acc:  88.53;   66679 s elapsed
+Epoch 24,  1351/ 1699; avg loss: 0.31; acc:  90.06;   66819 s elapsed
+Epoch 24,  1401/ 1699; avg loss: 0.32; acc:  89.25;   66959 s elapsed
+Epoch 24,  1451/ 1699; avg loss: 0.31; acc:  89.66;   67102 s elapsed
+Epoch 24,  1501/ 1699; avg loss: 0.33; acc:  88.62;   67245 s elapsed
+Epoch 24,  1551/ 1699; avg loss: 0.34; acc:  88.19;   67386 s elapsed
+Epoch 24,  1601/ 1699; avg loss: 0.34; acc:  88.59;   67527 s elapsed
+Epoch 24,  1651/ 1699; avg loss: 0.33; acc:  88.41;   67666 s elapsed
+Epoch 24:	 average loss: 0.28	 train accuracy: 90.6162
+====================
+Evaluating on validation set:
+Validation loss: 1.71
+Validation accuracy: 65.7
+====================
+
+Epoch 25,     1/ 1699; avg loss: 0.17; acc:  93.75;   67819 s elapsed
+Epoch 25,    51/ 1699; avg loss: 0.20; acc:  93.72;   67960 s elapsed
+Epoch 25,   101/ 1699; avg loss: 0.20; acc:  93.41;   68103 s elapsed
+Epoch 25,   151/ 1699; avg loss: 0.20; acc:  93.69;   68246 s elapsed
+Epoch 25,   201/ 1699; avg loss: 0.20; acc:  93.50;   68386 s elapsed
+Epoch 25,   251/ 1699; avg loss: 0.19; acc:  93.94;   68527 s elapsed
+Epoch 25,   301/ 1699; avg loss: 0.20; acc:  93.44;   68671 s elapsed
+Epoch 25,   351/ 1699; avg loss: 0.22; acc:  93.12;   68815 s elapsed
+Epoch 25,   401/ 1699; avg loss: 0.23; acc:  92.41;   68957 s elapsed
+Epoch 25,   451/ 1699; avg loss: 0.25; acc:  91.59;   69099 s elapsed
+Epoch 25,   501/ 1699; avg loss: 0.22; acc:  92.88;   69241 s elapsed
+Epoch 25,   551/ 1699; avg loss: 0.25; acc:  91.47;   69389 s elapsed
+Epoch 25,   601/ 1699; avg loss: 0.24; acc:  92.28;   69534 s elapsed
+Epoch 25,   651/ 1699; avg loss: 0.26; acc:  92.03;   69674 s elapsed
+Epoch 25,   701/ 1699; avg loss: 0.27; acc:  91.34;   69820 s elapsed
+Epoch 25,   751/ 1699; avg loss: 0.23; acc:  92.22;   69958 s elapsed
+Epoch 25,   801/ 1699; avg loss: 0.27; acc:  91.28;   70098 s elapsed
+Epoch 25,   851/ 1699; avg loss: 0.29; acc:  90.78;   70239 s elapsed
+Epoch 25,   901/ 1699; avg loss: 0.29; acc:  90.81;   70379 s elapsed
+Epoch 25,   951/ 1699; avg loss: 0.29; acc:  90.00;   70519 s elapsed
+Epoch 25,  1001/ 1699; avg loss: 0.30; acc:  89.84;   70660 s elapsed
+Epoch 25,  1051/ 1699; avg loss: 0.28; acc:  91.09;   70803 s elapsed
+Epoch 25,  1101/ 1699; avg loss: 0.29; acc:  90.56;   70944 s elapsed
+Epoch 25,  1151/ 1699; avg loss: 0.29; acc:  90.75;   71086 s elapsed
+Epoch 25,  1201/ 1699; avg loss: 0.33; acc:  88.56;   71228 s elapsed
+Epoch 25,  1251/ 1699; avg loss: 0.31; acc:  89.31;   71372 s elapsed
+Epoch 25,  1301/ 1699; avg loss: 0.34; acc:  88.72;   71515 s elapsed
+Epoch 25,  1351/ 1699; avg loss: 0.34; acc:  88.81;   71658 s elapsed
+Epoch 25,  1401/ 1699; avg loss: 0.32; acc:  89.69;   71800 s elapsed
+Epoch 25,  1451/ 1699; avg loss: 0.32; acc:  88.97;   71942 s elapsed
+Epoch 25,  1501/ 1699; avg loss: 0.33; acc:  89.25;   72082 s elapsed
+Epoch 25,  1551/ 1699; avg loss: 0.32; acc:  88.97;   72223 s elapsed
+Epoch 25,  1601/ 1699; avg loss: 0.31; acc:  89.16;   72369 s elapsed
+run.sh: line 14: 30864 Terminated              python train.py -train_from models/$mf -traindata $d/cbtest_NE_train.txt.pt -validdata $d/cbtest_NE_valid_2000ex.txt.pt -dict $d/cbtest_NE_train.txtdict.pt -save_model $m -gru_size 384 -embed_size 384 -batch_size 64 -dropout 0.1 -epochs $epoch -learning_rate $lr -gpu 0 -log_interval 50
+Namespace(batch_size=64, dict='data/CBTest/data/cbtest_NE_train.txtdict.pt', dropout=0.1, embed_size=384, epochs=15, gpu=0, gru_size=384, learning_rate=0.001, log_interval=50, save_model='model_lstm', start_epoch=1, train_from='', traindata='data/CBTest/data/cbtest_NE_train.txt.pt', validdata='data/CBTest/data/cbtest_NE_valid_2000ex.txt.pt', weight_decay=0.0001)
+('Loading dictrionary from ', 'data/CBTest/data/cbtest_NE_train.txtdict.pt')
+('Loading train data from ', 'data/CBTest/data/cbtest_NE_train.txt.pt')
+('Loading valid data from ', 'data/CBTest/data/cbtest_NE_valid_2000ex.txt.pt')
+ * vocabulary size = 15683
+ * number of training samples. 108719
+ * maximum batch size. 64
+Building model...
+* number of parameters: 8387712
+AoAReader(
+  (embedding): Embedding(15683, 384, padding_idx=0)
+  (gru): LSTM(384, 384, batch_first=True, dropout=0.1, bidirectional=True)
+)
+
+Epoch  1,     1/ 1699; avg loss: 4.29; acc:  40.62;       1 s elapsed
+Epoch  1,    51/ 1699; avg loss: 2.69; acc:  46.00;      32 s elapsed
+Epoch  1,   101/ 1699; avg loss: 1.80; acc:  51.09;      64 s elapsed
+Epoch  1,   151/ 1699; avg loss: 1.68; acc:  49.19;      96 s elapsed
+Epoch  1,   201/ 1699; avg loss: 1.61; acc:  52.00;     129 s elapsed
+Epoch  1,   251/ 1699; avg loss: 1.62; acc:  49.81;     161 s elapsed
+Epoch  1,   301/ 1699; avg loss: 1.58; acc:  49.94;     193 s elapsed
+Epoch  1,   351/ 1699; avg loss: 1.48; acc:  53.75;     226 s elapsed
+Epoch  1,   401/ 1699; avg loss: 1.49; acc:  53.34;     258 s elapsed
+Epoch  1,   451/ 1699; avg loss: 1.48; acc:  54.59;     290 s elapsed
+Epoch  1,   501/ 1699; avg loss: 1.40; acc:  55.88;     322 s elapsed
+Epoch  1,   551/ 1699; avg loss: 1.35; acc:  57.38;     354 s elapsed
+Epoch  1,   601/ 1699; avg loss: 1.25; acc:  59.41;     386 s elapsed
+Epoch  1,   651/ 1699; avg loss: 1.24; acc:  61.22;     419 s elapsed
+Epoch  1,   701/ 1699; avg loss: 1.23; acc:  60.78;     451 s elapsed
+Epoch  1,   751/ 1699; avg loss: 1.19; acc:  63.19;     483 s elapsed
+Epoch  1,   801/ 1699; avg loss: 1.19; acc:  62.31;     515 s elapsed
+Epoch  1,   851/ 1699; avg loss: 1.16; acc:  62.84;     547 s elapsed
+Epoch  1,   901/ 1699; avg loss: 1.12; acc:  63.72;     579 s elapsed
+Epoch  1,   951/ 1699; avg loss: 1.13; acc:  63.78;     610 s elapsed
+Epoch  1,  1001/ 1699; avg loss: 1.14; acc:  64.44;     642 s elapsed
+Epoch  1,  1051/ 1699; avg loss: 1.10; acc:  64.44;     674 s elapsed
+Epoch  1,  1101/ 1699; avg loss: 1.08; acc:  64.72;     706 s elapsed
+Epoch  1,  1151/ 1699; avg loss: 1.04; acc:  66.47;     738 s elapsed
+Epoch  1,  1201/ 1699; avg loss: 1.05; acc:  66.16;     769 s elapsed
+Epoch  1,  1251/ 1699; avg loss: 1.01; acc:  67.19;     801 s elapsed
+Epoch  1,  1301/ 1699; avg loss: 1.05; acc:  66.12;     833 s elapsed
+Epoch  1,  1351/ 1699; avg loss: 1.05; acc:  66.78;     864 s elapsed
+Epoch  1,  1401/ 1699; avg loss: 1.00; acc:  66.75;     896 s elapsed
+Epoch  1,  1451/ 1699; avg loss: 0.99; acc:  68.31;     929 s elapsed
+Epoch  1,  1501/ 1699; avg loss: 0.98; acc:  67.88;     960 s elapsed
+Epoch  1,  1551/ 1699; avg loss: 1.01; acc:  66.25;     992 s elapsed
+Epoch  1,  1601/ 1699; avg loss: 0.98; acc:  68.53;    1024 s elapsed
+Epoch  1,  1651/ 1699; avg loss: 0.97; acc:  69.56;    1056 s elapsed
+Epoch 1:	 average loss: 1.27	 train accuracy: 60.9148
+====================
+Evaluating on validation set:
+Validation loss: 1.41
+Validation accuracy: 60.6
+====================
+
+Epoch  2,     1/ 1699; avg loss: 0.83; acc:  78.12;    1093 s elapsed
+Epoch  2,    51/ 1699; avg loss: 0.91; acc:  69.44;    1124 s elapsed
+Epoch  2,   101/ 1699; avg loss: 0.94; acc:  69.50;    1156 s elapsed
+Epoch  2,   151/ 1699; avg loss: 0.90; acc:  70.38;    1188 s elapsed
+Epoch  2,   201/ 1699; avg loss: 0.91; acc:  69.22;    1220 s elapsed
+Epoch  2,   251/ 1699; avg loss: 0.91; acc:  69.12;    1251 s elapsed
+Epoch  2,   301/ 1699; avg loss: 0.89; acc:  71.03;    1283 s elapsed
+Epoch  2,   351/ 1699; avg loss: 0.91; acc:  69.62;    1315 s elapsed
+Epoch  2,   401/ 1699; avg loss: 0.91; acc:  70.56;    1347 s elapsed
+Epoch  2,   451/ 1699; avg loss: 0.91; acc:  70.25;    1379 s elapsed
+Epoch  2,   501/ 1699; avg loss: 0.92; acc:  70.00;    1410 s elapsed
+Epoch  2,   551/ 1699; avg loss: 0.90; acc:  70.53;    1442 s elapsed
+Epoch  2,   601/ 1699; avg loss: 0.88; acc:  70.38;    1474 s elapsed
+Epoch  2,   651/ 1699; avg loss: 0.96; acc:  67.72;    1506 s elapsed
+Epoch  2,   701/ 1699; avg loss: 0.87; acc:  70.34;    1538 s elapsed
+Epoch  2,   751/ 1699; avg loss: 0.96; acc:  68.50;    1570 s elapsed
+Epoch  2,   801/ 1699; avg loss: 0.86; acc:  71.50;    1602 s elapsed
+Epoch  2,   851/ 1699; avg loss: 0.87; acc:  70.28;    1633 s elapsed
+Epoch  2,   901/ 1699; avg loss: 0.82; acc:  72.84;    1664 s elapsed
+Epoch  2,   951/ 1699; avg loss: 0.92; acc:  70.31;    1696 s elapsed
+Epoch  2,  1001/ 1699; avg loss: 0.87; acc:  71.88;    1728 s elapsed
+Epoch  2,  1051/ 1699; avg loss: 0.92; acc:  69.62;    1760 s elapsed
+Epoch  2,  1101/ 1699; avg loss: 0.85; acc:  71.22;    1792 s elapsed
+Epoch  2,  1151/ 1699; avg loss: 0.87; acc:  71.00;    1824 s elapsed
+Epoch  2,  1201/ 1699; avg loss: 0.86; acc:  70.81;    1856 s elapsed
+Epoch  2,  1251/ 1699; avg loss: 0.86; acc:  72.16;    1888 s elapsed
+Epoch  2,  1301/ 1699; avg loss: 0.87; acc:  71.62;    1920 s elapsed
+Epoch  2,  1351/ 1699; avg loss: 0.89; acc:  70.16;    1952 s elapsed
+Epoch  2,  1401/ 1699; avg loss: 0.86; acc:  71.22;    1984 s elapsed
+Epoch  2,  1451/ 1699; avg loss: 0.89; acc:  69.94;    2016 s elapsed
+Epoch  2,  1501/ 1699; avg loss: 0.86; acc:  71.78;    2048 s elapsed
+Epoch  2,  1551/ 1699; avg loss: 0.86; acc:  72.47;    2080 s elapsed
+Epoch  2,  1601/ 1699; avg loss: 0.87; acc:  72.09;    2112 s elapsed
+Epoch  2,  1651/ 1699; avg loss: 0.86; acc:  72.84;    2144 s elapsed
+Epoch 2:	 average loss: 0.89	 train accuracy: 70.6813
+====================
+Evaluating on validation set:
+Validation loss: 1.39
+Validation accuracy: 62.15
+====================
+
+Epoch  3,     1/ 1699; avg loss: 0.55; acc:  76.56;    2180 s elapsed
+Epoch  3,    51/ 1699; avg loss: 0.80; acc:  73.50;    2213 s elapsed
+Epoch  3,   101/ 1699; avg loss: 0.78; acc:  74.16;    2244 s elapsed
+Epoch  3,   151/ 1699; avg loss: 0.80; acc:  71.81;    2276 s elapsed
+Epoch  3,   201/ 1699; avg loss: 0.81; acc:  72.38;    2307 s elapsed
+Epoch  3,   251/ 1699; avg loss: 0.82; acc:  72.19;    2340 s elapsed
+Epoch  3,   301/ 1699; avg loss: 0.79; acc:  73.41;    2371 s elapsed
+Epoch  3,   351/ 1699; avg loss: 0.79; acc:  73.12;    2404 s elapsed
+Epoch  3,   401/ 1699; avg loss: 0.77; acc:  74.75;    2435 s elapsed
+Epoch  3,   451/ 1699; avg loss: 0.81; acc:  72.09;    2468 s elapsed
+Epoch  3,   501/ 1699; avg loss: 0.82; acc:  72.22;    2500 s elapsed
+Epoch  3,   551/ 1699; avg loss: 0.82; acc:  71.97;    2532 s elapsed
+Epoch  3,   601/ 1699; avg loss: 0.76; acc:  74.47;    2564 s elapsed
+Epoch  3,   651/ 1699; avg loss: 0.78; acc:  74.00;    2596 s elapsed
+Epoch  3,   701/ 1699; avg loss: 0.83; acc:  71.59;    2627 s elapsed
+Epoch  3,   751/ 1699; avg loss: 0.79; acc:  73.25;    2659 s elapsed
+Epoch  3,   801/ 1699; avg loss: 0.79; acc:  73.59;    2690 s elapsed
+Epoch  3,   851/ 1699; avg loss: 0.80; acc:  73.50;    2722 s elapsed
+Epoch  3,   901/ 1699; avg loss: 0.78; acc:  73.94;    2755 s elapsed
+Epoch  3,   951/ 1699; avg loss: 0.80; acc:  74.50;    2786 s elapsed
+Epoch  3,  1001/ 1699; avg loss: 0.79; acc:  73.00;    2818 s elapsed
+Epoch  3,  1051/ 1699; avg loss: 0.80; acc:  72.84;    2850 s elapsed
+Epoch  3,  1101/ 1699; avg loss: 0.82; acc:  72.72;    2882 s elapsed
+Epoch  3,  1151/ 1699; avg loss: 0.75; acc:  74.28;    2914 s elapsed
+Epoch  3,  1201/ 1699; avg loss: 0.77; acc:  74.03;    2946 s elapsed
+Epoch  3,  1251/ 1699; avg loss: 0.80; acc:  73.56;    2978 s elapsed
+Epoch  3,  1301/ 1699; avg loss: 0.83; acc:  71.34;    3009 s elapsed
+Epoch  3,  1351/ 1699; avg loss: 0.78; acc:  74.75;    3041 s elapsed
+Epoch  3,  1401/ 1699; avg loss: 0.79; acc:  74.09;    3073 s elapsed
+Epoch  3,  1451/ 1699; avg loss: 0.83; acc:  72.66;    3104 s elapsed
+Epoch  3,  1501/ 1699; avg loss: 0.77; acc:  74.06;    3136 s elapsed
+Epoch  3,  1551/ 1699; avg loss: 0.82; acc:  72.34;    3168 s elapsed
+Epoch  3,  1601/ 1699; avg loss: 0.78; acc:  73.56;    3199 s elapsed
+Epoch  3,  1651/ 1699; avg loss: 0.82; acc:  72.41;    3231 s elapsed
+Epoch 3:	 average loss: 0.80	 train accuracy: 73.2402
+====================
+Evaluating on validation set:
+Validation loss: 1.20
+Validation accuracy: 67.85
+====================
+
+Epoch  4,     1/ 1699; avg loss: 0.84; acc:  73.44;    3269 s elapsed
+Epoch  4,    51/ 1699; avg loss: 0.71; acc:  76.19;    3300 s elapsed
+Epoch  4,   101/ 1699; avg loss: 0.70; acc:  77.16;    3332 s elapsed
+Epoch  4,   151/ 1699; avg loss: 0.75; acc:  74.16;    3364 s elapsed
+Epoch  4,   201/ 1699; avg loss: 0.72; acc:  75.16;    3396 s elapsed
+Epoch  4,   251/ 1699; avg loss: 0.71; acc:  75.72;    3428 s elapsed
+Epoch  4,   301/ 1699; avg loss: 0.74; acc:  75.44;    3460 s elapsed
+Epoch  4,   351/ 1699; avg loss: 0.74; acc:  73.97;    3491 s elapsed
+Epoch  4,   401/ 1699; avg loss: 0.74; acc:  74.34;    3523 s elapsed
+Epoch  4,   451/ 1699; avg loss: 0.75; acc:  74.44;    3555 s elapsed
+Epoch  4,   501/ 1699; avg loss: 0.75; acc:  73.31;    3587 s elapsed
+Epoch  4,   551/ 1699; avg loss: 0.74; acc:  74.59;    3619 s elapsed
+Epoch  4,   601/ 1699; avg loss: 0.74; acc:  75.22;    3651 s elapsed
+Epoch  4,   651/ 1699; avg loss: 0.74; acc:  75.44;    3683 s elapsed
+Epoch  4,   701/ 1699; avg loss: 0.73; acc:  75.28;    3714 s elapsed
+Epoch  4,   751/ 1699; avg loss: 0.73; acc:  75.06;    3746 s elapsed
+Epoch  4,   801/ 1699; avg loss: 0.77; acc:  74.59;    3777 s elapsed
+Epoch  4,   851/ 1699; avg loss: 0.75; acc:  74.69;    3809 s elapsed
+Epoch  4,   901/ 1699; avg loss: 0.73; acc:  74.56;    3841 s elapsed
+Epoch  4,   951/ 1699; avg loss: 0.73; acc:  75.16;    3873 s elapsed
+Epoch  4,  1001/ 1699; avg loss: 0.79; acc:  72.88;    3905 s elapsed
+Epoch  4,  1051/ 1699; avg loss: 0.75; acc:  75.19;    3937 s elapsed
+Epoch  4,  1101/ 1699; avg loss: 0.76; acc:  73.72;    3968 s elapsed
+Epoch  4,  1151/ 1699; avg loss: 0.74; acc:  73.94;    4000 s elapsed
+Epoch  4,  1201/ 1699; avg loss: 0.77; acc:  73.47;    4033 s elapsed
+Epoch  4,  1251/ 1699; avg loss: 0.75; acc:  74.88;    4064 s elapsed
+Epoch  4,  1301/ 1699; avg loss: 0.73; acc:  75.00;    4096 s elapsed
+Epoch  4,  1351/ 1699; avg loss: 0.73; acc:  75.50;    4128 s elapsed
+Epoch  4,  1401/ 1699; avg loss: 0.75; acc:  74.03;    4159 s elapsed
+Epoch  4,  1451/ 1699; avg loss: 0.75; acc:  74.81;    4191 s elapsed
+Epoch  4,  1501/ 1699; avg loss: 0.77; acc:  74.59;    4223 s elapsed
+Epoch  4,  1551/ 1699; avg loss: 0.76; acc:  74.22;    4255 s elapsed
+Epoch  4,  1601/ 1699; avg loss: 0.74; acc:  74.84;    4287 s elapsed
+Epoch  4,  1651/ 1699; avg loss: 0.71; acc:  74.75;    4318 s elapsed
+Epoch 4:	 average loss: 0.74	 train accuracy: 74.7036
+====================
+Evaluating on validation set:
+Validation loss: 1.28
+Validation accuracy: 65.55
+====================
+
+Epoch  5,     1/ 1699; avg loss: 0.88; acc:  70.31;    4355 s elapsed
+Epoch  5,    51/ 1699; avg loss: 0.64; acc:  78.16;    4386 s elapsed
+Epoch  5,   101/ 1699; avg loss: 0.66; acc:  77.78;    4418 s elapsed
+Epoch  5,   151/ 1699; avg loss: 0.71; acc:  75.28;    4450 s elapsed
+Epoch  5,   201/ 1699; avg loss: 0.67; acc:  75.34;    4482 s elapsed
+Epoch  5,   251/ 1699; avg loss: 0.68; acc:  76.78;    4514 s elapsed
+Epoch  5,   301/ 1699; avg loss: 0.66; acc:  77.09;    4545 s elapsed
+Epoch  5,   351/ 1699; avg loss: 0.74; acc:  75.00;    4577 s elapsed
+Epoch  5,   401/ 1699; avg loss: 0.67; acc:  77.16;    4609 s elapsed
+Epoch  5,   451/ 1699; avg loss: 0.67; acc:  76.47;    4641 s elapsed
+Epoch  5,   501/ 1699; avg loss: 0.69; acc:  77.56;    4673 s elapsed
+Epoch  5,   551/ 1699; avg loss: 0.72; acc:  75.12;    4704 s elapsed
+Epoch  5,   601/ 1699; avg loss: 0.70; acc:  76.44;    4736 s elapsed
+Epoch  5,   651/ 1699; avg loss: 0.72; acc:  74.03;    4767 s elapsed
+Epoch  5,   701/ 1699; avg loss: 0.69; acc:  76.50;    4799 s elapsed
+Epoch  5,   751/ 1699; avg loss: 0.71; acc:  75.16;    4831 s elapsed
+Epoch  5,   801/ 1699; avg loss: 0.75; acc:  74.09;    4863 s elapsed
+Epoch  5,   851/ 1699; avg loss: 0.69; acc:  75.72;    4895 s elapsed
+Epoch  5,   901/ 1699; avg loss: 0.70; acc:  76.75;    4927 s elapsed
+Epoch  5,   951/ 1699; avg loss: 0.71; acc:  75.34;    4959 s elapsed
+Epoch  5,  1001/ 1699; avg loss: 0.69; acc:  75.91;    4991 s elapsed
+Epoch  5,  1051/ 1699; avg loss: 0.70; acc:  76.16;    5023 s elapsed
+Epoch  5,  1101/ 1699; avg loss: 0.71; acc:  75.62;    5054 s elapsed
+Epoch  5,  1151/ 1699; avg loss: 0.72; acc:  75.06;    5086 s elapsed
+Epoch  5,  1201/ 1699; avg loss: 0.70; acc:  75.91;    5118 s elapsed
+Epoch  5,  1251/ 1699; avg loss: 0.73; acc:  73.97;    5150 s elapsed
+Epoch  5,  1301/ 1699; avg loss: 0.72; acc:  75.41;    5182 s elapsed
+Epoch  5,  1351/ 1699; avg loss: 0.71; acc:  76.41;    5214 s elapsed
+Epoch  5,  1401/ 1699; avg loss: 0.75; acc:  74.12;    5246 s elapsed
+Epoch  5,  1451/ 1699; avg loss: 0.72; acc:  75.16;    5277 s elapsed
+Epoch  5,  1501/ 1699; avg loss: 0.72; acc:  75.91;    5309 s elapsed
+Epoch  5,  1551/ 1699; avg loss: 0.74; acc:  75.16;    5340 s elapsed
+Epoch  5,  1601/ 1699; avg loss: 0.74; acc:  74.06;    5372 s elapsed
+Epoch  5,  1651/ 1699; avg loss: 0.74; acc:  75.22;    5404 s elapsed
+Epoch 5:	 average loss: 0.71	 train accuracy: 75.6896
+====================
+Evaluating on validation set:
+Validation loss: 1.18
+Validation accuracy: 66.3
+====================
+
+Epoch  6,     1/ 1699; avg loss: 0.53; acc:  82.81;    5441 s elapsed
+Epoch  6,    51/ 1699; avg loss: 0.61; acc:  78.00;    5473 s elapsed
+Epoch  6,   101/ 1699; avg loss: 0.63; acc:  78.12;    5504 s elapsed
+Epoch  6,   151/ 1699; avg loss: 0.65; acc:  77.56;    5536 s elapsed
+Epoch  6,   201/ 1699; avg loss: 0.65; acc:  77.44;    5568 s elapsed
+Epoch  6,   251/ 1699; avg loss: 0.64; acc:  77.25;    5600 s elapsed
+Epoch  6,   301/ 1699; avg loss: 0.64; acc:  78.00;    5631 s elapsed
+Epoch  6,   351/ 1699; avg loss: 0.67; acc:  77.22;    5663 s elapsed
+Epoch  6,   401/ 1699; avg loss: 0.65; acc:  76.62;    5695 s elapsed
+Epoch  6,   451/ 1699; avg loss: 0.67; acc:  77.28;    5726 s elapsed
+Epoch  6,   501/ 1699; avg loss: 0.69; acc:  77.22;    5758 s elapsed
+Epoch  6,   551/ 1699; avg loss: 0.65; acc:  77.69;    5789 s elapsed
+Epoch  6,   601/ 1699; avg loss: 0.66; acc:  78.34;    5820 s elapsed
+Epoch  6,   651/ 1699; avg loss: 0.66; acc:  76.56;    5852 s elapsed
+Epoch  6,   701/ 1699; avg loss: 0.69; acc:  76.72;    5884 s elapsed
+Epoch  6,   751/ 1699; avg loss: 0.69; acc:  75.53;    5916 s elapsed
+Epoch  6,   801/ 1699; avg loss: 0.69; acc:  76.66;    5947 s elapsed
+Epoch  6,   851/ 1699; avg loss: 0.70; acc:  76.34;    5980 s elapsed
+Epoch  6,   901/ 1699; avg loss: 0.70; acc:  76.06;    6012 s elapsed
+Epoch  6,   951/ 1699; avg loss: 0.67; acc:  75.88;    6044 s elapsed
+Epoch  6,  1001/ 1699; avg loss: 0.72; acc:  75.25;    6075 s elapsed
+Epoch  6,  1051/ 1699; avg loss: 0.66; acc:  76.94;    6107 s elapsed
+Epoch  6,  1101/ 1699; avg loss: 0.70; acc:  76.03;    6140 s elapsed
+Epoch  6,  1151/ 1699; avg loss: 0.71; acc:  75.12;    6172 s elapsed
+Epoch  6,  1201/ 1699; avg loss: 0.67; acc:  76.66;    6204 s elapsed
+Epoch  6,  1251/ 1699; avg loss: 0.68; acc:  76.59;    6235 s elapsed
+Epoch  6,  1301/ 1699; avg loss: 0.71; acc:  74.84;    6267 s elapsed
+Epoch  6,  1351/ 1699; avg loss: 0.68; acc:  76.50;    6299 s elapsed
+Epoch  6,  1401/ 1699; avg loss: 0.70; acc:  76.03;    6331 s elapsed
+Epoch  6,  1451/ 1699; avg loss: 0.69; acc:  76.62;    6363 s elapsed
+Epoch  6,  1501/ 1699; avg loss: 0.71; acc:  76.06;    6395 s elapsed
+Epoch  6,  1551/ 1699; avg loss: 0.70; acc:  76.31;    6427 s elapsed
+Epoch  6,  1601/ 1699; avg loss: 0.73; acc:  75.12;    6459 s elapsed
+Epoch  6,  1651/ 1699; avg loss: 0.69; acc:  76.50;    6491 s elapsed
+Epoch 6:	 average loss: 0.68	 train accuracy: 76.6186
+====================
+Evaluating on validation set:
+Validation loss: 1.21
+Validation accuracy: 67.85
+====================
+
+Epoch  7,     1/ 1699; avg loss: 0.60; acc:  82.81;    6528 s elapsed
+Epoch  7,    51/ 1699; avg loss: 0.59; acc:  79.03;    6560 s elapsed
+Epoch  7,   101/ 1699; avg loss: 0.60; acc:  79.28;    6591 s elapsed
+Epoch  7,   151/ 1699; avg loss: 0.60; acc:  79.50;    6623 s elapsed
+Epoch  7,   201/ 1699; avg loss: 0.64; acc:  78.31;    6655 s elapsed
+Epoch  7,   251/ 1699; avg loss: 0.62; acc:  77.84;    6686 s elapsed
+Epoch  7,   301/ 1699; avg loss: 0.61; acc:  78.62;    6719 s elapsed
+Epoch  7,   351/ 1699; avg loss: 0.64; acc:  78.44;    6751 s elapsed
+Epoch  7,   401/ 1699; avg loss: 0.62; acc:  78.31;    6782 s elapsed
+Epoch  7,   451/ 1699; avg loss: 0.64; acc:  77.28;    6814 s elapsed
+Epoch  7,   501/ 1699; avg loss: 0.61; acc:  78.59;    6846 s elapsed
+Epoch  7,   551/ 1699; avg loss: 0.62; acc:  78.00;    6878 s elapsed
+Epoch  7,   601/ 1699; avg loss: 0.68; acc:  77.41;    6910 s elapsed
+Epoch  7,   651/ 1699; avg loss: 0.66; acc:  77.88;    6941 s elapsed
+Epoch  7,   701/ 1699; avg loss: 0.68; acc:  76.25;    6974 s elapsed
+Epoch  7,   751/ 1699; avg loss: 0.67; acc:  75.72;    7006 s elapsed
+Epoch  7,   801/ 1699; avg loss: 0.66; acc:  77.22;    7038 s elapsed
+Epoch  7,   851/ 1699; avg loss: 0.68; acc:  77.66;    7069 s elapsed
+Epoch  7,   901/ 1699; avg loss: 0.68; acc:  75.31;    7102 s elapsed
+Epoch  7,   951/ 1699; avg loss: 0.67; acc:  77.16;    7135 s elapsed
+Epoch  7,  1001/ 1699; avg loss: 0.65; acc:  76.94;    7166 s elapsed
+Epoch  7,  1051/ 1699; avg loss: 0.69; acc:  75.12;    7197 s elapsed
+Epoch  7,  1101/ 1699; avg loss: 0.69; acc:  76.66;    7229 s elapsed
+Epoch  7,  1151/ 1699; avg loss: 0.71; acc:  75.66;    7260 s elapsed
+Epoch  7,  1201/ 1699; avg loss: 0.68; acc:  77.22;    7293 s elapsed
+Epoch  7,  1251/ 1699; avg loss: 0.65; acc:  76.84;    7324 s elapsed
+Epoch  7,  1301/ 1699; avg loss: 0.66; acc:  77.84;    7356 s elapsed
+Epoch  7,  1351/ 1699; avg loss: 0.69; acc:  75.66;    7388 s elapsed
+Epoch  7,  1401/ 1699; avg loss: 0.67; acc:  76.09;    7419 s elapsed
+Epoch  7,  1451/ 1699; avg loss: 0.69; acc:  76.28;    7451 s elapsed
+Epoch  7,  1501/ 1699; avg loss: 0.72; acc:  75.41;    7483 s elapsed
+Epoch  7,  1551/ 1699; avg loss: 0.66; acc:  77.66;    7515 s elapsed
+Epoch  7,  1601/ 1699; avg loss: 0.65; acc:  78.19;    7546 s elapsed
+Epoch  7,  1651/ 1699; avg loss: 0.65; acc:  76.59;    7578 s elapsed
+Epoch 7:	 average loss: 0.66	 train accuracy: 77.2827
+====================
+Evaluating on validation set:
+Validation loss: 1.16
+Validation accuracy: 68.6
+====================
+
+Epoch  8,     1/ 1699; avg loss: 0.82; acc:  75.00;    7615 s elapsed
+Epoch  8,    51/ 1699; avg loss: 0.58; acc:  79.81;    7647 s elapsed
+Epoch  8,   101/ 1699; avg loss: 0.56; acc:  80.34;    7679 s elapsed
+Epoch  8,   151/ 1699; avg loss: 0.58; acc:  79.12;    7711 s elapsed
+Epoch  8,   201/ 1699; avg loss: 0.58; acc:  79.91;    7742 s elapsed
+Epoch  8,   251/ 1699; avg loss: 0.60; acc:  78.78;    7774 s elapsed
+Epoch  8,   301/ 1699; avg loss: 0.59; acc:  80.25;    7807 s elapsed
+Epoch  8,   351/ 1699; avg loss: 0.62; acc:  78.53;    7838 s elapsed
+Epoch  8,   401/ 1699; avg loss: 0.59; acc:  79.81;    7871 s elapsed
+Epoch  8,   451/ 1699; avg loss: 0.62; acc:  78.88;    7902 s elapsed
+Epoch  8,   501/ 1699; avg loss: 0.63; acc:  77.16;    7934 s elapsed
+Epoch  8,   551/ 1699; avg loss: 0.63; acc:  77.84;    7966 s elapsed
+Epoch  8,   601/ 1699; avg loss: 0.65; acc:  78.50;    7998 s elapsed
+Epoch  8,   651/ 1699; avg loss: 0.63; acc:  77.28;    8030 s elapsed
+Epoch  8,   701/ 1699; avg loss: 0.62; acc:  77.72;    8062 s elapsed
+Epoch  8,   751/ 1699; avg loss: 0.64; acc:  77.69;    8093 s elapsed
+Epoch  8,   801/ 1699; avg loss: 0.65; acc:  77.41;    8125 s elapsed
+Epoch  8,   851/ 1699; avg loss: 0.62; acc:  77.97;    8157 s elapsed
+Epoch  8,   901/ 1699; avg loss: 0.66; acc:  77.16;    8189 s elapsed
+Epoch  8,   951/ 1699; avg loss: 0.63; acc:  77.03;    8221 s elapsed
+Epoch  8,  1001/ 1699; avg loss: 0.63; acc:  77.97;    8252 s elapsed
+Epoch  8,  1051/ 1699; avg loss: 0.62; acc:  78.94;    8284 s elapsed
+Epoch  8,  1101/ 1699; avg loss: 0.67; acc:  77.03;    8316 s elapsed
+Epoch  8,  1151/ 1699; avg loss: 0.67; acc:  76.53;    8348 s elapsed
+Epoch  8,  1201/ 1699; avg loss: 0.65; acc:  77.59;    8379 s elapsed
+Epoch  8,  1251/ 1699; avg loss: 0.67; acc:  76.69;    8411 s elapsed
+Epoch  8,  1301/ 1699; avg loss: 0.65; acc:  77.41;    8443 s elapsed
+Epoch  8,  1351/ 1699; avg loss: 0.69; acc:  76.94;    8474 s elapsed
+Epoch  8,  1401/ 1699; avg loss: 0.65; acc:  76.75;    8506 s elapsed
+Epoch  8,  1451/ 1699; avg loss: 0.68; acc:  76.47;    8538 s elapsed
+Epoch  8,  1501/ 1699; avg loss: 0.66; acc:  77.56;    8569 s elapsed
+Epoch  8,  1551/ 1699; avg loss: 0.64; acc:  78.03;    8602 s elapsed
+Epoch  8,  1601/ 1699; avg loss: 0.68; acc:  76.94;    8634 s elapsed
+Epoch  8,  1651/ 1699; avg loss: 0.66; acc:  76.59;    8666 s elapsed
+Epoch 8:	 average loss: 0.64	 train accuracy: 77.9119
+====================
+Evaluating on validation set:
+Validation loss: 1.18
+Validation accuracy: 67.7
+====================
+
+Epoch  9,     1/ 1699; avg loss: 0.52; acc:  79.69;    8703 s elapsed
+Epoch  9,    51/ 1699; avg loss: 0.53; acc:  81.66;    8735 s elapsed
+Epoch  9,   101/ 1699; avg loss: 0.52; acc:  81.38;    8767 s elapsed
+Epoch  9,   151/ 1699; avg loss: 0.55; acc:  80.81;    8798 s elapsed
+Epoch  9,   201/ 1699; avg loss: 0.56; acc:  80.09;    8830 s elapsed
+Epoch  9,   251/ 1699; avg loss: 0.56; acc:  80.28;    8862 s elapsed
+Epoch  9,   301/ 1699; avg loss: 0.57; acc:  79.88;    8894 s elapsed
+Epoch  9,   351/ 1699; avg loss: 0.56; acc:  80.78;    8925 s elapsed
+Epoch  9,   401/ 1699; avg loss: 0.63; acc:  78.59;    8958 s elapsed
+Epoch  9,   451/ 1699; avg loss: 0.60; acc:  79.28;    8989 s elapsed
+Epoch  9,   501/ 1699; avg loss: 0.58; acc:  80.00;    9021 s elapsed
+Epoch  9,   551/ 1699; avg loss: 0.60; acc:  79.16;    9053 s elapsed
+Epoch  9,   601/ 1699; avg loss: 0.59; acc:  79.16;    9084 s elapsed
+Epoch  9,   651/ 1699; avg loss: 0.59; acc:  79.16;    9116 s elapsed
+Epoch  9,   701/ 1699; avg loss: 0.58; acc:  80.16;    9148 s elapsed
+Epoch  9,   751/ 1699; avg loss: 0.63; acc:  78.44;    9180 s elapsed
+Epoch  9,   801/ 1699; avg loss: 0.62; acc:  78.47;    9212 s elapsed
+Epoch  9,   851/ 1699; avg loss: 0.65; acc:  77.88;    9244 s elapsed
+Epoch  9,   901/ 1699; avg loss: 0.62; acc:  78.41;    9275 s elapsed
+Epoch  9,   951/ 1699; avg loss: 0.61; acc:  77.97;    9308 s elapsed
+Epoch  9,  1001/ 1699; avg loss: 0.63; acc:  78.78;    9340 s elapsed
+Epoch  9,  1051/ 1699; avg loss: 0.62; acc:  77.78;    9371 s elapsed
+Epoch  9,  1101/ 1699; avg loss: 0.62; acc:  78.34;    9403 s elapsed
+Epoch  9,  1151/ 1699; avg loss: 0.68; acc:  77.06;    9435 s elapsed
+Epoch  9,  1201/ 1699; avg loss: 0.66; acc:  76.84;    9467 s elapsed
+Epoch  9,  1251/ 1699; avg loss: 0.69; acc:  76.12;    9499 s elapsed
+Epoch  9,  1301/ 1699; avg loss: 0.65; acc:  77.75;    9531 s elapsed
+Epoch  9,  1351/ 1699; avg loss: 0.65; acc:  76.97;    9563 s elapsed
+Epoch  9,  1401/ 1699; avg loss: 0.65; acc:  77.34;    9595 s elapsed
+Epoch  9,  1451/ 1699; avg loss: 0.64; acc:  76.91;    9627 s elapsed
+Epoch  9,  1501/ 1699; avg loss: 0.64; acc:  77.16;    9658 s elapsed
+Epoch  9,  1551/ 1699; avg loss: 0.65; acc:  78.53;    9691 s elapsed
+Epoch  9,  1601/ 1699; avg loss: 0.65; acc:  77.28;    9722 s elapsed
+Epoch  9,  1651/ 1699; avg loss: 0.64; acc:  77.09;    9754 s elapsed
+Epoch 9:	 average loss: 0.62	 train accuracy: 78.5585
+====================
+Evaluating on validation set:
+Validation loss: 1.18
+Validation accuracy: 67.35
+====================
+
+Epoch 10,     1/ 1699; avg loss: 0.75; acc:  73.44;    9792 s elapsed
+Epoch 10,    51/ 1699; avg loss: 0.54; acc:  81.16;    9823 s elapsed
+Epoch 10,   101/ 1699; avg loss: 0.51; acc:  82.97;    9856 s elapsed
+Epoch 10,   151/ 1699; avg loss: 0.54; acc:  81.56;    9889 s elapsed
+Epoch 10,   201/ 1699; avg loss: 0.53; acc:  80.88;    9920 s elapsed
+Epoch 10,   251/ 1699; avg loss: 0.53; acc:  81.72;    9952 s elapsed
+Epoch 10,   301/ 1699; avg loss: 0.54; acc:  81.53;    9984 s elapsed
+Epoch 10,   351/ 1699; avg loss: 0.53; acc:  80.75;   10016 s elapsed
+Epoch 10,   401/ 1699; avg loss: 0.57; acc:  80.91;   10048 s elapsed
+Epoch 10,   451/ 1699; avg loss: 0.59; acc:  79.38;   10080 s elapsed
+Epoch 10,   501/ 1699; avg loss: 0.60; acc:  78.94;   10112 s elapsed
+Epoch 10,   551/ 1699; avg loss: 0.61; acc:  78.69;   10144 s elapsed
+Epoch 10,   601/ 1699; avg loss: 0.60; acc:  80.12;   10175 s elapsed
+Epoch 10,   651/ 1699; avg loss: 0.58; acc:  80.19;   10207 s elapsed
+Epoch 10,   701/ 1699; avg loss: 0.58; acc:  79.78;   10239 s elapsed
+Epoch 10,   751/ 1699; avg loss: 0.61; acc:  78.91;   10270 s elapsed
+Epoch 10,   801/ 1699; avg loss: 0.58; acc:  80.16;   10302 s elapsed
+Epoch 10,   851/ 1699; avg loss: 0.62; acc:  78.88;   10333 s elapsed
+Epoch 10,   901/ 1699; avg loss: 0.59; acc:  79.50;   10365 s elapsed
+Epoch 10,   951/ 1699; avg loss: 0.59; acc:  79.72;   10397 s elapsed
+Epoch 10,  1001/ 1699; avg loss: 0.61; acc:  77.81;   10429 s elapsed
+Epoch 10,  1051/ 1699; avg loss: 0.64; acc:  77.59;   10461 s elapsed
+Epoch 10,  1101/ 1699; avg loss: 0.63; acc:  77.09;   10493 s elapsed
+Epoch 10,  1151/ 1699; avg loss: 0.62; acc:  78.03;   10525 s elapsed
+Epoch 10,  1201/ 1699; avg loss: 0.63; acc:  78.22;   10557 s elapsed
+Epoch 10,  1251/ 1699; avg loss: 0.67; acc:  77.00;   10588 s elapsed
+Epoch 10,  1301/ 1699; avg loss: 0.64; acc:  78.59;   10620 s elapsed
+Epoch 10,  1351/ 1699; avg loss: 0.62; acc:  78.00;   10652 s elapsed
+Epoch 10,  1401/ 1699; avg loss: 0.64; acc:  77.69;   10683 s elapsed
+Epoch 10,  1451/ 1699; avg loss: 0.67; acc:  75.66;   10715 s elapsed
+Epoch 10,  1501/ 1699; avg loss: 0.63; acc:  78.59;   10747 s elapsed
+Epoch 10,  1551/ 1699; avg loss: 0.63; acc:  77.66;   10778 s elapsed
+Epoch 10,  1601/ 1699; avg loss: 0.63; acc:  79.22;   10810 s elapsed
+Epoch 10,  1651/ 1699; avg loss: 0.63; acc:  77.44;   10842 s elapsed
+Epoch 10:	 average loss: 0.60	 train accuracy: 79.2014
+====================
+Evaluating on validation set:
+Validation loss: 1.16
+Validation accuracy: 69.15
+====================
+
+Epoch 11,     1/ 1699; avg loss: 0.51; acc:  84.38;   10880 s elapsed
+Epoch 11,    51/ 1699; avg loss: 0.47; acc:  83.25;   10911 s elapsed
+Epoch 11,   101/ 1699; avg loss: 0.52; acc:  81.88;   10943 s elapsed
+Epoch 11,   151/ 1699; avg loss: 0.52; acc:  82.12;   10975 s elapsed
+Epoch 11,   201/ 1699; avg loss: 0.52; acc:  82.28;   11007 s elapsed
+Epoch 11,   251/ 1699; avg loss: 0.53; acc:  82.25;   11039 s elapsed
+Epoch 11,   301/ 1699; avg loss: 0.53; acc:  81.62;   11071 s elapsed
+Epoch 11,   351/ 1699; avg loss: 0.54; acc:  81.31;   11102 s elapsed
+Epoch 11,   401/ 1699; avg loss: 0.54; acc:  81.84;   11135 s elapsed
+Epoch 11,   451/ 1699; avg loss: 0.58; acc:  79.59;   11166 s elapsed
+Epoch 11,   501/ 1699; avg loss: 0.55; acc:  81.41;   11198 s elapsed
+Epoch 11,   551/ 1699; avg loss: 0.56; acc:  81.69;   11230 s elapsed
+Epoch 11,   601/ 1699; avg loss: 0.56; acc:  79.34;   11261 s elapsed
+Epoch 11,   651/ 1699; avg loss: 0.60; acc:  79.72;   11294 s elapsed
+Epoch 11,   701/ 1699; avg loss: 0.58; acc:  80.03;   11326 s elapsed
+Epoch 11,   751/ 1699; avg loss: 0.58; acc:  78.78;   11358 s elapsed
+Epoch 11,   801/ 1699; avg loss: 0.60; acc:  79.78;   11391 s elapsed
+Epoch 11,   851/ 1699; avg loss: 0.58; acc:  80.41;   11422 s elapsed
+Epoch 11,   901/ 1699; avg loss: 0.59; acc:  79.25;   11453 s elapsed
+Epoch 11,   951/ 1699; avg loss: 0.59; acc:  78.81;   11485 s elapsed
+Epoch 11,  1001/ 1699; avg loss: 0.58; acc:  79.56;   11517 s elapsed
+Epoch 11,  1051/ 1699; avg loss: 0.61; acc:  78.50;   11548 s elapsed
+Epoch 11,  1101/ 1699; avg loss: 0.60; acc:  79.19;   11580 s elapsed
+Epoch 11,  1151/ 1699; avg loss: 0.60; acc:  79.22;   11612 s elapsed
+Epoch 11,  1201/ 1699; avg loss: 0.58; acc:  80.22;   11644 s elapsed
+Epoch 11,  1251/ 1699; avg loss: 0.65; acc:  78.41;   11676 s elapsed
+Epoch 11,  1301/ 1699; avg loss: 0.60; acc:  79.41;   11708 s elapsed
+Epoch 11,  1351/ 1699; avg loss: 0.60; acc:  78.78;   11739 s elapsed
+Epoch 11,  1401/ 1699; avg loss: 0.64; acc:  77.31;   11771 s elapsed
+Epoch 11,  1451/ 1699; avg loss: 0.62; acc:  77.69;   11803 s elapsed
+Epoch 11,  1501/ 1699; avg loss: 0.65; acc:  77.97;   11834 s elapsed
+Epoch 11,  1551/ 1699; avg loss: 0.63; acc:  77.59;   11866 s elapsed
+Epoch 11,  1601/ 1699; avg loss: 0.61; acc:  78.12;   11899 s elapsed
+Epoch 11,  1651/ 1699; avg loss: 0.64; acc:  78.50;   11931 s elapsed
+Epoch 11:	 average loss: 0.58	 train accuracy: 79.8297
+====================
+Evaluating on validation set:
+Validation loss: 1.22
+Validation accuracy: 67.2
+====================
+
+Epoch 12,     1/ 1699; avg loss: 0.46; acc:  84.38;   11968 s elapsed
+Epoch 12,    51/ 1699; avg loss: 0.48; acc:  83.66;   12000 s elapsed
+Epoch 12,   101/ 1699; avg loss: 0.50; acc:  82.50;   12032 s elapsed
+Epoch 12,   151/ 1699; avg loss: 0.49; acc:  82.41;   12064 s elapsed
+Epoch 12,   201/ 1699; avg loss: 0.50; acc:  82.34;   12095 s elapsed
+Epoch 12,   251/ 1699; avg loss: 0.52; acc:  82.25;   12127 s elapsed
+Epoch 12,   301/ 1699; avg loss: 0.53; acc:  82.69;   12159 s elapsed
+Epoch 12,   351/ 1699; avg loss: 0.53; acc:  81.41;   12191 s elapsed
+Epoch 12,   401/ 1699; avg loss: 0.50; acc:  82.88;   12223 s elapsed
+Epoch 12,   451/ 1699; avg loss: 0.54; acc:  81.66;   12254 s elapsed
+Epoch 12,   501/ 1699; avg loss: 0.51; acc:  81.53;   12286 s elapsed
+Epoch 12,   551/ 1699; avg loss: 0.54; acc:  81.38;   12318 s elapsed
+Epoch 12,   601/ 1699; avg loss: 0.58; acc:  80.03;   12351 s elapsed
+Epoch 12,   651/ 1699; avg loss: 0.53; acc:  80.66;   12382 s elapsed
+Epoch 12,   701/ 1699; avg loss: 0.58; acc:  80.78;   12414 s elapsed
+Epoch 12,   751/ 1699; avg loss: 0.56; acc:  80.22;   12445 s elapsed
+Epoch 12,   801/ 1699; avg loss: 0.57; acc:  79.53;   12477 s elapsed
+Epoch 12,   851/ 1699; avg loss: 0.58; acc:  79.16;   12509 s elapsed
+Epoch 12,   901/ 1699; avg loss: 0.59; acc:  79.34;   12541 s elapsed
+Epoch 12,   951/ 1699; avg loss: 0.59; acc:  79.69;   12572 s elapsed
+Epoch 12,  1001/ 1699; avg loss: 0.60; acc:  79.75;   12604 s elapsed
+Epoch 12,  1051/ 1699; avg loss: 0.59; acc:  79.84;   12636 s elapsed
+Epoch 12,  1101/ 1699; avg loss: 0.56; acc:  80.41;   12667 s elapsed
+Epoch 12,  1151/ 1699; avg loss: 0.57; acc:  80.78;   12699 s elapsed
+Epoch 12,  1201/ 1699; avg loss: 0.57; acc:  79.91;   12731 s elapsed
+Epoch 12,  1251/ 1699; avg loss: 0.58; acc:  79.53;   12763 s elapsed
+Epoch 12,  1301/ 1699; avg loss: 0.57; acc:  79.94;   12795 s elapsed
+Epoch 12,  1351/ 1699; avg loss: 0.61; acc:  78.72;   12828 s elapsed
+Epoch 12,  1401/ 1699; avg loss: 0.60; acc:  79.22;   12859 s elapsed
+Epoch 12,  1451/ 1699; avg loss: 0.63; acc:  78.16;   12892 s elapsed
+Epoch 12,  1501/ 1699; avg loss: 0.59; acc:  79.06;   12923 s elapsed
+Epoch 12,  1551/ 1699; avg loss: 0.60; acc:  78.72;   12955 s elapsed
+Epoch 12,  1601/ 1699; avg loss: 0.60; acc:  78.97;   12988 s elapsed
+Epoch 12,  1651/ 1699; avg loss: 0.60; acc:  78.91;   13020 s elapsed
+Epoch 12:	 average loss: 0.56	 train accuracy: 80.4616
+====================
+Evaluating on validation set:
+Validation loss: 1.22
+Validation accuracy: 67.75
+====================
+
+Epoch 13,     1/ 1699; avg loss: 0.55; acc:  79.69;   13058 s elapsed
+Epoch 13,    51/ 1699; avg loss: 0.47; acc:  83.59;   13090 s elapsed
+Epoch 13,   101/ 1699; avg loss: 0.46; acc:  83.19;   13122 s elapsed
+Epoch 13,   151/ 1699; avg loss: 0.49; acc:  83.06;   13153 s elapsed
+Epoch 13,   201/ 1699; avg loss: 0.50; acc:  82.81;   13186 s elapsed
+Epoch 13,   251/ 1699; avg loss: 0.50; acc:  83.31;   13217 s elapsed
+Epoch 13,   301/ 1699; avg loss: 0.51; acc:  82.25;   13248 s elapsed
+Epoch 13,   351/ 1699; avg loss: 0.50; acc:  82.84;   13280 s elapsed
+Epoch 13,   401/ 1699; avg loss: 0.52; acc:  81.59;   13312 s elapsed
+run.sh: line 16: 32646 Terminated              python train.py -traindata $d/cbtest_NE_train.txt.pt -validdata $d/cbtest_NE_valid_2000ex.txt.pt -dict $d/cbtest_NE_train.txtdict.pt -save_model $m -gru_size 384 -embed_size 384 -batch_size 64 -dropout 0.1 -epochs $epoch -learning_rate $lr -gpu 0 -log_interval 50
